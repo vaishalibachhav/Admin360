@@ -1,38 +1,69 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite thread-count="1" parallel="tests" name="Failed suite [Admin360TestProject]" guice-stage="DEVELOPMENT">
-  <test thread-count="1" parallel="tests" name="Enquiry(failed)">
+<suite thread-count="1" guice-stage="DEVELOPMENT" name="Failed suite [Admin360TestProject]" parallel="tests">
+  <test thread-count="1" name="Admission(failed)" parallel="tests">
     <classes>
-      <class name="com.mytest.Enquiry">
+      <class name="com.mytest.Admission">
         <methods>
-          <include name="Studentname_contain_whitespaces_at_begining"/>
-          <include name="Qualification_contain_Special_Characters"/>
-          <include name="Follow_Up_Mode"/>
-          <include name="Secondary_email_contain_whitespaces_at_begining"/>
-          <include name="Middlename_contain_whitespaces_at_begining"/>
-          <include name="Aadharno_contain_greaterthan_12_numbers"/>
-          <include name="Middlename_contain_Special_Characters"/>
+          <include name="Studentname_contains_whitespaces_at_begining"/>
           <include name="Pincode_permanentaddress_contain_special_characters"/>
-          <include name="Lastname_contain_Special_Characters"/>
-          <include name="Primary_mobno_contain_lessthan_10_numbers"/>
+          <include name="Aadharno_contains_greaterthan_12_numbers"/>
+          <include name="Collegename_contains_Special_Characters"/>
+          <include name="Studentname_contains_Special_Characters"/>
+          <include name="Qualification_contain_Special_Characters"/>
+          <include name="Studentname_contain_whitespaces_at_begining"/>
+          <include name="Pincode_permanentaddress_contains_special_characters"/>
+          <include name="Document_functionality"/>
+          <include name="Aadharno_contain_special_characters"/>
+          <include name="Middlename_contains_whitespaces"/>
+          <include name="Primary_email_contain_whitespaces_at_begining"/>
+          <include name="Pincode_currentaddress_contains_special_characters"/>
           <include name="Studentname_contain_Special_Characters"/>
-          <include name="Blank_Gender_field"/>
-          <include name="Aadharno_contain_lessthan_12_numbers"/>
-          <include name="Lastname_contain_whitespaces_at_begining"/>
-          <include name="Pincode_currentaddress_contain_special_characters"/>
-          <include name="Primary_mobno_contain_special_characters"/>
+          <include name="Delete_admission"/>
+          <include name="Primary_mobno_contains_lessthan_10_numbers"/>
+          <include name="Qualification_contains_numbers"/>
           <include name="Secondary_mobno_contain_special_characters"/>
           <include name="Studentname_contain_whitespaces"/>
-          <include name="Aadharno_contain_special_characters"/>
+          <include name="Pincode_currentaddress_contain_lessthan_6_numbers"/>
+          <include name="Pincode_permanentaddress_contain_lessthan_6_numbers"/>
+          <include name="Primary_mobno_contains_special_characters"/>
+          <include name="Aadharno_contain_greaterthan_12_numbers"/>
+          <include name="Secondary_email_contains_whitespaces_at_begining"/>
+          <include name="Lastname_contains_whitespaces_at_begining"/>
+          <include name="Studentname_contains_whitespaces"/>
+          <include name="Middlename_contain_Special_Characters"/>
+          <include name="Secondary_mobno_contains_lessthan_10_numbers"/>
+          <include name="Lastname_contains_whitespaces"/>
+          <include name="Qualification_contains_Special_Characters"/>
+          <include name="Lastname_contains_Special_Characters"/>
+          <include name="Primary_mobno_contain_lessthan_10_numbers"/>
+          <include name="Document_Functionality"/>
+          <include name="Delete_Admission"/>
+          <include name="Aadharno_contains_special_characters"/>
+          <include name="Blank_Gender_Field"/>
+          <include name="Middlename_contain_whitespaces_at_begining"/>
+          <include name="Secondary_email_contain_whitespaces_at_begining"/>
           <include name="Collegename_contain_Special_Characters"/>
+          <include name="Course_interested_is_Blank"/>
+          <include name="Primary_email_contains_whitespaces_at_begining"/>
+          <include name="Pincode_currentaddress_contains_lessthan_6_numbers"/>
+          <include name="Aadharno_contains_lessthan_12_numbers"/>
           <include name="Secondary_mobno_contain_lessthan_10_numbers"/>
+          <include name="Secondary_mobno_contains_special_characters"/>
           <include name="Lastname_contain_whitespaces"/>
-          <include name="Qualification_contain_numbers"/>
-          <include name="Blank_Demo_Lecture"/>
-          <include name="Primary_email_contain_whitespaces_at_begining"/>
           <include name="Middlename_contain_whitespaces"/>
+          <include name="Pincode_permanentaddress_contains_lessthan_6_numbers"/>
+          <include name="Lastname_contain_Special_Characters"/>
+          <include name="Qualification_contain_numbers"/>
+          <include name="Middlename_contains_Special_Characters"/>
+          <include name="Middlename_contains_whitespaces_at_begining"/>
+          <include name="Blank_Gender_field"/>
+          <include name="Pincode_currentaddress_contain_special_characters"/>
+          <include name="Primary_mobno_contain_special_characters"/>
+          <include name="Aadharno_contain_lessthan_12_numbers"/>
+          <include name="Lastname_contain_whitespaces_at_begining"/>
         </methods>
-      </class> <!-- com.mytest.Enquiry -->
+      </class> <!-- com.mytest.Admission -->
     </classes>
-  </test> <!-- Enquiry(failed) -->
+  </test> <!-- Admission(failed) -->
 </suite> <!-- Failed suite [Admin360TestProject] -->

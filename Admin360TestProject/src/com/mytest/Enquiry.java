@@ -1097,9 +1097,6 @@ import org.testng.annotations.Test;
 				String actualcourse = driver.findElement(By.xpath("//*[@id=\"view-lead-status\"]/tbody/tr[1]/td[4]")).getText();
 				String actualleadsource = driver.findElement(By.xpath("//*[@id=\"view-lead-status\"]/tbody/tr/td[5]")).getText();
 				String actualleaddate = driver.findElement(By.xpath("//*[@id=\"view-lead-status\"]/tbody/tr/td[6]")).getText();
-				SimpleDateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy");
-				String date = dateFormat.format(new Date());
-				String actualassignto = driver.findElement(By.xpath("//*[@id=\"view-lead-status\"]/tbody/tr/td[7]")).getText();
 				Assert.assertEquals(actualname, "Ashwini Ashok Patil", "Student Name not getting saved");
 				Assert.assertEquals(actualmobileno, "7896541230", "Mobile No not getting saved");
 				Assert.assertEquals(actualcourse, "DOT NET JAVA", "Course not getting saved");
@@ -1172,8 +1169,6 @@ import org.testng.annotations.Test;
 				String actualcourse = driver.findElement(By.xpath("//*[@id=\"view-lead-status\"]/tbody/tr[1]/td[4]")).getText();
 				String actualleadsource = driver.findElement(By.xpath("//*[@id=\"view-lead-status\"]/tbody/tr/td[5]")).getText();
 				String actualleaddate = driver.findElement(By.xpath("//*[@id=\"view-lead-status\"]/tbody/tr/td[6]")).getText();
-				SimpleDateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy");
-				String date = dateFormat.format(new Date());
 				String actualassignto = driver.findElement(By.xpath("//*[@id=\"view-lead-status\"]/tbody/tr/td[7]")).getText();
 
 				Assert.assertEquals(actualname, "Aarti Suresh Pawar", "Student Name not getting saved");

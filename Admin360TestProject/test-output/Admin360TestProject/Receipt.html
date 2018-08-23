@@ -1,0 +1,441 @@
+<html>
+<head>
+<title>TestNG:  Receipt</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Receipt</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>26/6/0</td>
+</tr><tr>
+<td>Started on:</td><td>Fri Aug 10 16:14:41 IST 2018</td>
+</tr>
+<tr><td>Total time:</td><td>61 seconds (61615 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.mytest.Receipt.Amount_contain_special_characters()'><b>Amount_contain_special_characters</b><br>Test class: com.mytest.Receipt</td>
+<td><div><pre>java.lang.AssertionError: Amount Contains Spaecial Characters expected [true] but found [false]
+	at com.mytest.Receipt.Amount_contain_special_characters(Receipt.java:220)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+... Removed 19 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1026998975", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1026998975'><pre>java.lang.AssertionError: Amount Contains Spaecial Characters expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertTrue(Assert.java:44)
+	at com.mytest.Receipt.Amount_contain_special_characters(Receipt.java:220)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+</pre></div></td>
+<td>0</td>
+<td>com.mytest.Receipt@2118cddf</td></tr>
+<tr>
+<td title='com.mytest.Receipt.Delete()'><b>Delete</b><br>Test class: com.mytest.Receipt</td>
+<td><div><pre>java.lang.AssertionError: Receipt NOT Getting Deleted expected [No data available in table] but found [4]
+	at com.mytest.Receipt.Delete(Receipt.java:369)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1654858472", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1654858472'><pre>java.lang.AssertionError: Receipt NOT Getting Deleted expected [No data available in table] but found [4]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:453)
+	at com.mytest.Receipt.Delete(Receipt.java:369)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+</pre></div></td>
+<td>5</td>
+<td>com.mytest.Receipt@2118cddf</td></tr>
+<tr>
+<td title='com.mytest.Receipt.Email_contains_whitespaces_at_begining()'><b>Email_contains_whitespaces_at_begining</b><br>Test class: com.mytest.Receipt</td>
+<td><div><pre>java.lang.AssertionError:  Email contain Whitespaces at Begining expected [true] but found [false]
+	at com.mytest.Receipt.Email_contains_whitespaces_at_begining(Receipt.java:202)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+... Removed 19 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1686788287", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1686788287'><pre>java.lang.AssertionError:  Email contain Whitespaces at Begining expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertTrue(Assert.java:44)
+	at com.mytest.Receipt.Email_contains_whitespaces_at_begining(Receipt.java:202)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+</pre></div></td>
+<td>1</td>
+<td>com.mytest.Receipt@2118cddf</td></tr>
+<tr>
+<td title='com.mytest.Receipt.Mobile_No_contain_lessthan_10_numbers()'><b>Mobile_No_contain_lessthan_10_numbers</b><br>Test class: com.mytest.Receipt</td>
+<td><div><pre>java.lang.AssertionError:  Mobile No Contains Less than 10 numbers expected [true] but found [false]
+	at com.mytest.Receipt.Mobile_No_contain_lessthan_10_numbers(Receipt.java:159)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+... Removed 19 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1812668101", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1812668101'><pre>java.lang.AssertionError:  Mobile No Contains Less than 10 numbers expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertTrue(Assert.java:44)
+	at com.mytest.Receipt.Mobile_No_contain_lessthan_10_numbers(Receipt.java:159)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+</pre></div></td>
+<td>0</td>
+<td>com.mytest.Receipt@2118cddf</td></tr>
+<tr>
+<td title='com.mytest.Receipt.Mobile_No_contain_special_characters()'><b>Mobile_No_contain_special_characters</b><br>Test class: com.mytest.Receipt</td>
+<td><div><pre>java.lang.AssertionError:  Mobile No Contains Spaecial Characters expected [true] but found [false]
+	at com.mytest.Receipt.Mobile_No_contain_special_characters(Receipt.java:97)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+... Removed 19 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1507393456", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1507393456'><pre>java.lang.AssertionError:  Mobile No Contains Spaecial Characters expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertTrue(Assert.java:44)
+	at com.mytest.Receipt.Mobile_No_contain_special_characters(Receipt.java:97)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+</pre></div></td>
+<td>0</td>
+<td>com.mytest.Receipt@2118cddf</td></tr>
+<tr>
+<td title='com.mytest.Receipt.Name_contain_Special_Characters()'><b>Name_contain_Special_Characters</b><br>Test class: com.mytest.Receipt</td>
+<td><div><pre>java.lang.AssertionError:  Name Contains Special Characters expected [true] but found [false]
+	at com.mytest.Receipt.Name_contain_Special_Characters(Receipt.java:48)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+... Removed 19 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2103682076", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2103682076'><pre>java.lang.AssertionError:  Name Contains Special Characters expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertTrue(Assert.java:44)
+	at com.mytest.Receipt.Name_contain_Special_Characters(Receipt.java:48)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+</pre></div></td>
+<td>3</td>
+<td>com.mytest.Receipt@2118cddf</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.mytest.Receipt.Account_Head()'><b>Account_Head</b><br>Test class: com.mytest.Receipt</td>
+<td></td>
+<td>0</td>
+<td>com.mytest.Receipt@2118cddf</td></tr>
+<tr>
+<td title='com.mytest.Receipt.Add_Account_Head()'><b>Add_Account_Head</b><br>Test class: com.mytest.Receipt</td>
+<td></td>
+<td>11</td>
+<td>com.mytest.Receipt@2118cddf</td></tr>
+<tr>
+<td title='com.mytest.Receipt.Amount_contain_alphabets()'><b>Amount_contain_alphabets</b><br>Test class: com.mytest.Receipt</td>
+<td></td>
+<td>0</td>
+<td>com.mytest.Receipt@2118cddf</td></tr>
+<tr>
+<td title='com.mytest.Receipt.Amount_contain_negative_numbers()'><b>Amount_contain_negative_numbers</b><br>Test class: com.mytest.Receipt</td>
+<td></td>
+<td>0</td>
+<td>com.mytest.Receipt@2118cddf</td></tr>
+<tr>
+<td title='com.mytest.Receipt.Amount_contain_numbers()'><b>Amount_contain_numbers</b><br>Test class: com.mytest.Receipt</td>
+<td></td>
+<td>0</td>
+<td>com.mytest.Receipt@2118cddf</td></tr>
+<tr>
+<td title='com.mytest.Receipt.Amount_contain_whitespaces()'><b>Amount_contain_whitespaces</b><br>Test class: com.mytest.Receipt</td>
+<td></td>
+<td>0</td>
+<td>com.mytest.Receipt@2118cddf</td></tr>
+<tr>
+<td title='com.mytest.Receipt.Amount_contain_whitespaces_at_begining()'><b>Amount_contain_whitespaces_at_begining</b><br>Test class: com.mytest.Receipt</td>
+<td></td>
+<td>0</td>
+<td>com.mytest.Receipt@2118cddf</td></tr>
+<tr>
+<td title='com.mytest.Receipt.Amount_field_is_Blank()'><b>Amount_field_is_Blank</b><br>Test class: com.mytest.Receipt</td>
+<td></td>
+<td>0</td>
+<td>com.mytest.Receipt@2118cddf</td></tr>
+<tr>
+<td title='com.mytest.Receipt.Cheque_Payment_Mode()'><b>Cheque_Payment_Mode</b><br>Test class: com.mytest.Receipt</td>
+<td></td>
+<td>7</td>
+<td>com.mytest.Receipt@2118cddf</td></tr>
+<tr>
+<td title='com.mytest.Receipt.Email_contains_whitespaces()'><b>Email_contains_whitespaces</b><br>Test class: com.mytest.Receipt</td>
+<td></td>
+<td>2</td>
+<td>com.mytest.Receipt@2118cddf</td></tr>
+<tr>
+<td title='com.mytest.Receipt.Email_valid()'><b>Email_valid</b><br>Test class: com.mytest.Receipt</td>
+<td></td>
+<td>0</td>
+<td>com.mytest.Receipt@2118cddf</td></tr>
+<tr>
+<td title='com.mytest.Receipt.Mobile_No_contain_alphabets()'><b>Mobile_No_contain_alphabets</b><br>Test class: com.mytest.Receipt</td>
+<td></td>
+<td>0</td>
+<td>com.mytest.Receipt@2118cddf</td></tr>
+<tr>
+<td title='com.mytest.Receipt.Mobile_No_contain_greaterthan_10_numbers()'><b>Mobile_No_contain_greaterthan_10_numbers</b><br>Test class: com.mytest.Receipt</td>
+<td></td>
+<td>0</td>
+<td>com.mytest.Receipt@2118cddf</td></tr>
+<tr>
+<td title='com.mytest.Receipt.Mobile_No_contain_numbers()'><b>Mobile_No_contain_numbers</b><br>Test class: com.mytest.Receipt</td>
+<td></td>
+<td>0</td>
+<td>com.mytest.Receipt@2118cddf</td></tr>
+<tr>
+<td title='com.mytest.Receipt.Mobile_No_contain_whitespaces()'><b>Mobile_No_contain_whitespaces</b><br>Test class: com.mytest.Receipt</td>
+<td></td>
+<td>0</td>
+<td>com.mytest.Receipt@2118cddf</td></tr>
+<tr>
+<td title='com.mytest.Receipt.Mobile_No_contain_whitespaces_at_begining()'><b>Mobile_No_contain_whitespaces_at_begining</b><br>Test class: com.mytest.Receipt</td>
+<td></td>
+<td>0</td>
+<td>com.mytest.Receipt@2118cddf</td></tr>
+<tr>
+<td title='com.mytest.Receipt.Mobile_No_field_is_Blank()'><b>Mobile_No_field_is_Blank</b><br>Test class: com.mytest.Receipt</td>
+<td></td>
+<td>0</td>
+<td>com.mytest.Receipt@2118cddf</td></tr>
+<tr>
+<td title='com.mytest.Receipt.Name_contain_alphabets()'><b>Name_contain_alphabets</b><br>Test class: com.mytest.Receipt</td>
+<td></td>
+<td>0</td>
+<td>com.mytest.Receipt@2118cddf</td></tr>
+<tr>
+<td title='com.mytest.Receipt.Name_contain_numbers()'><b>Name_contain_numbers</b><br>Test class: com.mytest.Receipt</td>
+<td></td>
+<td>0</td>
+<td>com.mytest.Receipt@2118cddf</td></tr>
+<tr>
+<td title='com.mytest.Receipt.Name_contain_whitespaces()'><b>Name_contain_whitespaces</b><br>Test class: com.mytest.Receipt</td>
+<td></td>
+<td>0</td>
+<td>com.mytest.Receipt@2118cddf</td></tr>
+<tr>
+<td title='com.mytest.Receipt.Name_field_is_Blank()'><b>Name_field_is_Blank</b><br>Test class: com.mytest.Receipt</td>
+<td></td>
+<td>2</td>
+<td>com.mytest.Receipt@2118cddf</td></tr>
+<tr>
+<td title='com.mytest.Receipt.Notes()'><b>Notes</b><br>Test class: com.mytest.Receipt</td>
+<td></td>
+<td>0</td>
+<td>com.mytest.Receipt@2118cddf</td></tr>
+<tr>
+<td title='com.mytest.Receipt.Online_Payment_Mode()'><b>Online_Payment_Mode</b><br>Test class: com.mytest.Receipt</td>
+<td></td>
+<td>10</td>
+<td>com.mytest.Receipt@2118cddf</td></tr>
+<tr>
+<td title='com.mytest.Receipt.Payment_Mode_Functionality()'><b>Payment_Mode_Functionality</b><br>Test class: com.mytest.Receipt</td>
+<td></td>
+<td>0</td>
+<td>com.mytest.Receipt@2118cddf</td></tr>
+<tr>
+<td title='com.mytest.Receipt.Save_Changes_Button_Functionality()'><b>Save_Changes_Button_Functionality</b><br>Test class: com.mytest.Receipt</td>
+<td></td>
+<td>2</td>
+<td>com.mytest.Receipt@2118cddf</td></tr>
+<tr>
+<td title='com.mytest.Receipt.Update_Functionality()'><b>Update_Functionality</b><br>Test class: com.mytest.Receipt</td>
+<td></td>
+<td>8</td>
+<td>com.mytest.Receipt@2118cddf</td></tr>
+</table><p>
+</body>
+</html>

@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" parallel="tests" name="Failed suite [Admin360TestProject]" guice-stage="DEVELOPMENT">
+  <test thread-count="1" parallel="tests" name="Master_Course(failed)">
+    <classes>
+      <class name="com.mytest.Master_Course">
+        <methods>
+          <include name="Coursefees_contain_special_characters"/>
+          <include name="Coursename_contain_whitespaces_at_begining"/>
+        </methods>
+      </class> <!-- com.mytest.Master_Course -->
+    </classes>
+  </test> <!-- Master_Course(failed) -->
+  <test thread-count="1" parallel="tests" name="Enquiry(failed)">
+    <classes>
+      <class name="com.mytest.Enquiry">
+        <methods>
+          <include name="Studentname_contain_whitespaces_at_begining"/>
+          <include name="Qualification_contain_Special_Characters"/>
+          <include name="Secondary_email_contain_whitespaces_at_begining"/>
+          <include name="Middlename_contain_whitespaces_at_begining"/>
+          <include name="Aadharno_contain_greaterthan_12_numbers"/>
+          <include name="Middlename_contain_Special_Characters"/>
+          <include name="Pincode_permanentaddress_contain_special_characters"/>
+          <include name="Lastname_contain_Special_Characters"/>
+          <include name="Primary_mobno_contain_lessthan_10_numbers"/>
+          <include name="Studentname_contain_Special_Characters"/>
+          <include name="Blank_Gender_field"/>
+          <include name="Aadharno_contain_lessthan_12_numbers"/>
+          <include name="Lastname_contain_whitespaces_at_begining"/>
+          <include name="Pincode_currentaddress_contain_special_characters"/>
+          <include name="Primary_mobno_contain_special_characters"/>
+          <include name="Secondary_mobno_contain_special_characters"/>
+          <include name="Studentname_contain_whitespaces"/>
+          <include name="Aadharno_contain_special_characters"/>
+          <include name="Collegename_contain_Special_Characters"/>
+          <include name="Secondary_mobno_contain_lessthan_10_numbers"/>
+          <include name="Lastname_contain_whitespaces"/>
+          <include name="Qualification_contain_numbers"/>
+          <include name="Blank_Demo_Lecture"/>
+          <include name="Primary_email_contain_whitespaces_at_begining"/>
+          <include name="Middlename_contain_whitespaces"/>
+        </methods>
+      </class> <!-- com.mytest.Enquiry -->
+    </classes>
+  </test> <!-- Enquiry(failed) -->
+  <test thread-count="1" parallel="tests" name="Admission(failed)">
+    <classes>
+      <class name="com.mytest.Admission">
+        <methods>
+          <include name="Admission_Date"/>
+          <include name="Secondary_mobno_contains_greaterthan_10_numbers"/>
+          <include name="Finish_button_Functionality"/>
+          <include name="Collegename_contains_alphabets"/>
+          <include name="Communicationdetails_next_button_functionality"/>
+          <include name="Valid_Permanent_address"/>
+          <include name="Pincode_currentaddress_contain_whitespaces_at_begining"/>
+          <include name="Collegename_contains_Special_Characters"/>
+          <include name="Pincode_currentaddress_contains_numbers"/>
+          <include name="Pincode_permanentaddress_contains_numbers"/>
+          <include name="Secondary_mobno_contains_whitespaces_at_begining"/>
+          <include name="Lastname_contains_numbers"/>
+          <include name="Qualification_contain_Special_Characters"/>
+          <include name="CourseDetails_next_button_Functionality"/>
+          <include name="PersonalInfo_next_button_Functionality"/>
+          <include name="Studentname_contain_whitespaces_at_begining"/>
+          <include name="Pincode_permanentaddress_contains_special_characters"/>
+          <include name="Collegename_contains_whitespaces"/>
+          <include name="Primary_mobno_contains_numbers"/>
+          <include name="Document_functionality"/>
+          <include name="Secondary_mobno_contain_alphabets"/>
+          <include name="Middlename_contains_whitespaces"/>
+          <include name="Secondary_email_valid"/>
+          <include name="Primary_email_contain_whitespaces_at_begining"/>
+          <include name="Pincode_permanentaddress_contain_alphabets"/>
+          <include name="Qualification_Field_is_Blank"/>
+          <include name="Lastname_contain_alphabets"/>
+          <include name="Qualification_contain_whitespaces_at_begining"/>
+          <include name="Pincode_permanentaddress_contain_numbers"/>
+          <include name="Pincode_currentaddress_contains_special_characters"/>
+          <include name="Studentname_contain_Special_Characters"/>
+          <include name="Secondary_mobno_contains_numbers"/>
+          <include name="Blank_Discount_Functionality"/>
+          <include name="Admission_date"/>
+          <include name="Qualification_contains_alphabets"/>
+          <include name="Primary_mobno_contain_alphabets"/>
+          <include name="Primary_mobno_contains_lessthan_10_numbers"/>
+          <include name="Lastname_contain_numbers"/>
+          <include name="Secondary_mobno_contain_whitespaces"/>
+          <include name="Studentname_field_is_Blank"/>
+          <include name="Qualification_contains_numbers"/>
+          <include name="Qualification_contain_whitespaces"/>
+          <include name="Studentname_contain_numbers"/>
+          <include name="Secondary_mobno_contain_special_characters"/>
+          <include name="Studentname_contain_whitespaces"/>
+          <include name="Aadharno_contains_whitespaces_at_begining"/>
+          <include name="Pincode_currentaddress_contain_lessthan_6_numbers"/>
+          <include name="Primary_mobno_contains_special_characters"/>
+          <include name="LastName_field_is_Blank"/>
+          <include name="Secondary_email_contains_whitespaces_at_begining"/>
+          <include name="Pincode_currentaddress_contains_alphabets"/>
+          <include name="Discount_functionality"/>
+          <include name="Studentname_contains_whitespaces"/>
+          <include name="Middlename_contain_Special_Characters"/>
+          <include name="Pincode_Currentaddress_field_is_Blank"/>
+          <include name="Blank_Current_address"/>
+          <include name="Primary_Email_valid"/>
+          <include name="Lastname_contains_whitespaces"/>
+          <include name="Aadharno_contains_numbers"/>
+          <include name="Lastname_contains_Special_Characters"/>
+          <include name="Pincode_currentaddress_contain_numbers"/>
+          <include name="Primary_mobno_contain_whitespaces_at_begining"/>
+          <include name="Middlename_contain_alphabets"/>
+          <include name="Qualification_contains_whitespaces_at_begining"/>
+          <include name="Add_Enquiry"/>
+          <include name="Collegename_contain_whitespaces_at_begining"/>
+          <include name="Primary_mobno_contain_lessthan_10_numbers"/>
+          <include name="Gender_functionality"/>
+          <include name="Document_Functionality"/>
+          <include name="Delete_Admission"/>
+          <include name="Aadharno_contains_special_characters"/>
+          <include name="Blank_Gender_Field"/>
+          <include name="Middlename_contain_whitespaces_at_begining"/>
+          <include name="Secondary_email_contain_whitespaces_at_begining"/>
+          <include name="Collegename_contain_Special_Characters"/>
+          <include name="Primary_email_contains_whitespaces_at_begining"/>
+          <include name="Pincode_permanentaddress_contain_whitespaces_at_begining"/>
+          <include name="Update_functionality"/>
+          <include name="Aadharno_contain_whitespaces_at_begining"/>
+          <include name="Pincode_currentaddress_contains_lessthan_6_numbers"/>
+          <include name="Secondary_mobno_contain_lessthan_10_numbers"/>
+          <include name="Secondary_mobno_contains_special_characters"/>
+          <include name="Secondary_Email_valid"/>
+          <include name="Collegename_contains_whitespaces_at_begining"/>
+          <include name="Middlename_contain_whitespaces"/>
+          <include name="Pincode_permanentaddress_contains_lessthan_6_numbers"/>
+          <include name="Studentname_contains_numbers"/>
+          <include name="Aadharno_contains_alphabets"/>
+          <include name="Birthdate_functionality"/>
+          <include name="Pincode_permanentaddress_contains_whitespaces_at_begining"/>
+          <include name="Middlename_contain_numbers"/>
+          <include name="Qualification_contain_numbers"/>
+          <include name="Pincode_permanentaddress_contain_whitespaces"/>
+          <include name="Primary_mobno_contain_numbers"/>
+          <include name="Middlename_contains_whitespaces_at_begining"/>
+          <include name="Middlename_contains_alphabets"/>
+          <include name="Pincode_currentaddress_contain_special_characters"/>
+          <include name="Lastname_field_is_Blank"/>
+          <include name="Studentname_contain_alphabets"/>
+          <include name="Studentname_contains_whitespaces_at_begining"/>
+          <include name="Primary_email_contain_whitespaces"/>
+          <include name="Pincode_currentaddress_contain_whitespaces"/>
+          <include name="Pincode_permanentaddress_contain_special_characters"/>
+          <include name="Qualification_contain_alphabets"/>
+          <include name="Aadharno_contains_greaterthan_12_numbers"/>
+          <include name="Discount_Functionality"/>
+          <include name="Secondary_mobno_contain_numbers"/>
+          <include name="Pincode_currentaddress_contain_alphabets"/>
+          <include name="Pincode_currentaddress_contains_whitespaces"/>
+          <include name="Secondary_mobno_contain_greaterthan_10_numbers"/>
+          <include name="Studentname_contains_Special_Characters"/>
+          <include name="Primary_mobno_contain_greaterthan_10_numbers"/>
+          <include name="Collegename_contain_alphabets"/>
+          <include name="Middlename_contains_numbers"/>
+          <include name="Aadharno_contain_numbers"/>
+          <include name="Qualification_field_is_Blank"/>
+          <include name="Valid_permanent_address"/>
+          <include name="Gender_Functionality"/>
+          <include name="Pincode_permanentaddress_contains_whitespaces"/>
+          <include name="Primary_mobno_contain_whitespaces"/>
+          <include name="Blank_current_address"/>
+          <include name="Lastname_contains_alphabets"/>
+          <include name="Aadharno_contain_special_characters"/>
+          <include name="Secondary_mobno_contains_alphabets"/>
+          <include name="Studentname_contains_alphabets"/>
+          <include name="Pincode_currentaddress_contains_whitespaces_at_begining"/>
+          <include name="Pincode_currentaddress_contain_morethan_6_numbers"/>
+          <include name="StudentName_field_is_Blank"/>
+          <include name="Pincode_currentaddress_field_is_Blank"/>
+          <include name="Collegename_contains_numbers"/>
+          <include name="Primary_mobno_contains_whitespaces_at_begining"/>
+          <include name="Pincode_permanentaddress_contains_morethan_6_numbers"/>
+          <include name="Secondary_mobno_contain_whitespaces_at_begining"/>
+          <include name="Collegename_field_is_Blank"/>
+          <include name="Delete_admission"/>
+          <include name="Valid_Current_address"/>
+          <include name="Primary_mobno_contains_whitespaces"/>
+          <include name="Course_Functionality"/>
+          <include name="CollegeName_field_is_Blank"/>
+          <include name="Pincode_permanentaddress_contain_lessthan_6_numbers"/>
+          <include name="Primary_email_field_is_Blank"/>
+          <include name="Aadharno_contain_greaterthan_12_numbers"/>
+          <include name="Lastname_contains_whitespaces_at_begining"/>
+          <include name="Primary_email_valid"/>
+          <include name="Primary_mobno_Field_is_Blank"/>
+          <include name="Valid_current_address"/>
+          <include name="Collegename_contain_whitespaces"/>
+          <include name="Collegename_contain_numbers"/>
+          <include name="Communicationdetails_next_button_Functionality"/>
+          <include name="Secondary_mobno_contains_lessthan_10_numbers"/>
+          <include name="Finish_button_functionality"/>
+          <include name="Secondary_email_contain_whitespaces"/>
+          <include name="Qualification_contains_Special_Characters"/>
+          <include name="Aadharno_contain_alphabets"/>
+          <include name="PersonalInfo_next_button_functionality"/>
+          <include name="Pincode_permanentaddress_contains_alphabets"/>
+          <include name="CourseDetails_next_button_functionality"/>
+          <include name="Secondary_mobno_contains_whitespaces"/>
+          <include name="Course_Amount"/>
+          <include name="Primary_mobno_contains_alphabets"/>
+          <include name="Pincode_permanentaddress_contain_morethan_6_numbers"/>
+          <include name="Course_interested_is_Blank"/>
+          <include name="Secondary_email_contains_whitespaces"/>
+          <include name="Aadharno_contains_lessthan_12_numbers"/>
+          <include name="Primary_email_contains_whitespaces"/>
+          <include name="Lastname_contain_whitespaces"/>
+          <include name="Update_Functionality"/>
+          <include name="Birthdate_Functionality"/>
+          <include name="Lastname_contain_Special_Characters"/>
+          <include name="Qualification_contains_whitespaces"/>
+          <include name="Middlename_contains_Special_Characters"/>
+          <include name="Blank_Gender_field"/>
+          <include name="Primary_mobno_contain_special_characters"/>
+          <include name="Aadharno_contain_lessthan_12_numbers"/>
+          <include name="Lastname_contain_whitespaces_at_begining"/>
+          <include name="Primary_mobno_contains_greaterthan_10_numbers"/>
+          <include name="Primary_mobno_field_is_Blank"/>
+        </methods>
+      </class> <!-- com.mytest.Admission -->
+    </classes>
+  </test> <!-- Admission(failed) -->
+  <test thread-count="1" parallel="tests" name="FeesManager(failed)">
+    <classes>
+      <class name="com.mytest.FeesManager">
+        <methods>
+          <include name="View_Receipts_functionality"/>
+          <include name="Fee_Refund_Payment_Mode_Functionality"/>
+          <include name="Update_Fee_Receipt"/>
+          <include name="Fee_Refund_lessthan_Paid_Fees"/>
+          <include name="Now_Receiving_contains_special_characters"/>
+          <include name="Fee_Refund_Fee_Status_functionality"/>
+          <include name="Fee_Refund_Payment_Clear"/>
+          <include name="Fee_Refund_Notes"/>
+          <include name="Fee_Refund_Save_Changes_button_functionality"/>
+          <include name="Fee_Payment_Fee_Status_functionality"/>
+          <include name="Fee_Refund_contains_numbers"/>
+          <include name="Save_Changes_button_functionality"/>
+          <include name="Fee_Refund_contains_special_characters"/>
+          <include name="Fee_Refund_View_Receipts"/>
+        </methods>
+      </class> <!-- com.mytest.FeesManager -->
+    </classes>
+  </test> <!-- FeesManager(failed) -->
+  <test thread-count="1" parallel="tests" name="ChequeManager(failed)">
+    <classes>
+      <class name="com.mytest.ChequeManager">
+        <methods>
+          <include name="Add_Fee_Status"/>
+          <include name="Change_Cheque_Status"/>
+          <include name="Cheque_Manager"/>
+        </methods>
+      </class> <!-- com.mytest.ChequeManager -->
+    </classes>
+  </test> <!-- ChequeManager(failed) -->
+  <test thread-count="1" parallel="tests" name="Receipt(failed)">
+    <classes>
+      <class name="com.mytest.Receipt">
+        <methods>
+          <include name="Mobile_No_contain_lessthan_10_numbers"/>
+          <include name="Email_contains_whitespaces_at_begining"/>
+          <include name="Mobile_No_field_is_Blank"/>
+          <include name="Mobile_No_contain_alphabets"/>
+          <include name="Amount_contain_negative_numbers"/>
+          <include name="Notes"/>
+          <include name="Amount_contain_whitespaces"/>
+          <include name="Amount_contain_alphabets"/>
+          <include name="Mobile_No_contain_whitespaces"/>
+          <include name="Delete"/>
+          <include name="Name_contain_whitespaces"/>
+          <include name="Mobile_No_contain_whitespaces_at_begining"/>
+          <include name="Save_Changes_Button_Functionality"/>
+          <include name="Online_Payment_Mode"/>
+          <include name="Add_Account_Head"/>
+          <include name="Payment_Mode_Functionality"/>
+          <include name="Mobile_No_contain_greaterthan_10_numbers"/>
+          <include name="Name_contain_Special_Characters"/>
+          <include name="Account_Head"/>
+          <include name="Name_contain_numbers"/>
+          <include name="Email_contains_whitespaces"/>
+          <include name="Name_contain_alphabets"/>
+          <include name="Email_valid"/>
+          <include name="Cheque_Payment_Mode"/>
+          <include name="Amount_contain_numbers"/>
+          <include name="Name_field_is_Blank"/>
+          <include name="Amount_field_is_Blank"/>
+          <include name="Update_Functionality"/>
+          <include name="Amount_contain_special_characters"/>
+          <include name="Mobile_No_contain_special_characters"/>
+          <include name="Amount_contain_whitespaces_at_begining"/>
+          <include name="Mobile_No_contain_numbers"/>
+        </methods>
+      </class> <!-- com.mytest.Receipt -->
+    </classes>
+  </test> <!-- Receipt(failed) -->
+  <test thread-count="1" parallel="tests" name="Payment(failed)">
+    <classes>
+      <class name="com.mytest.Payment">
+        <methods>
+          <include name="Name_contain_numbers"/>
+          <include name="Email_contains_whitespaces"/>
+          <include name="Name_contain_alphabets"/>
+          <include name="Mobile_No_contain_whitespaces"/>
+          <include name="Cheque_Payment_Mode"/>
+          <include name="Payment_Mode_Functionality"/>
+          <include name="Save_Changes_Button_Functionality"/>
+          <include name="Account_Head"/>
+          <include name="Name_contain_Special_Characters"/>
+          <include name="Mobile_No_contain_greaterthan_10_numbers"/>
+          <include name="Mobile_No_contain_numbers"/>
+          <include name="Amount_contain_special_characters"/>
+          <include name="Amount_field_is_Blank"/>
+          <include name="Update_Functionality"/>
+          <include name="Email_valid"/>
+          <include name="Amount_contain_numbers"/>
+          <include name="Name_field_is_Blank"/>
+          <include name="Mobile_No_contain_alphabets"/>
+          <include name="Add_Receipt"/>
+          <include name="Amount_contain_negative_numbers"/>
+          <include name="Notes"/>
+          <include name="Mobile_No_contain_lessthan_10_numbers"/>
+          <include name="Mobile_No_contain_special_characters"/>
+          <include name="Email_contains_whitespaces_at_begining"/>
+          <include name="Amount_contain_whitespaces_at_begining"/>
+          <include name="Mobile_No_field_is_Blank"/>
+          <include name="Amount_contain_whitespaces"/>
+          <include name="Mobile_No_contain_whitespaces_at_begining"/>
+          <include name="Online_Payment_Mode"/>
+          <include name="Amount_contain_alphabets"/>
+          <include name="Delete"/>
+          <include name="Name_contain_whitespaces"/>
+        </methods>
+      </class> <!-- com.mytest.Payment -->
+    </classes>
+  </test> <!-- Payment(failed) -->
+</suite> <!-- Failed suite [Admin360TestProject] -->

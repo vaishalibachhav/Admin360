@@ -1,0 +1,11 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">	
+
+<suite thread-count="1" verbose="1" name="Admin360CucumberTest" annotations="JDK" parallel="tests">
+  
+  <test name="RunnerClass" preserve-order="true">
+	 <packages>
+	 	<package name="com.runnerclass.*"></package>
+	 </packages>
+  </test>	   
+  
+</suite>

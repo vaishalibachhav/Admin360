@@ -1,0 +1,1479 @@
+<html>
+<head>
+<title>TestNG:  Enquiry</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Enquiry</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>86/26/0</td>
+</tr><tr>
+<td>Started on:</td><td>Wed Aug 22 10:30:12 IST 2018</td>
+</tr>
+<tr><td>Total time:</td><td>125 seconds (125217 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.mytest.Enquiry.Aadharno_contain_greaterthan_12_numbers()'><b>Aadharno_contain_greaterthan_12_numbers</b><br>Test class: com.mytest.Enquiry</td>
+<td><div><pre>java.lang.AssertionError: Aadhar No Contains Whitespaces at begining expected [true] but found [false]
+	at com.mytest.Enquiry.Aadharno_contain_greaterthan_12_numbers(Enquiry.java:399)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+... Removed 19 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1180837161", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1180837161'><pre>java.lang.AssertionError: Aadhar No Contains Whitespaces at begining expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertTrue(Assert.java:44)
+	at com.mytest.Enquiry.Aadharno_contain_greaterthan_12_numbers(Enquiry.java:399)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+</pre></div></td>
+<td>0</td>
+<td>com.mytest.Enquiry@776b83cc</td></tr>
+<tr>
+<td title='com.mytest.Enquiry.Aadharno_contain_lessthan_12_numbers()'><b>Aadharno_contain_lessthan_12_numbers</b><br>Test class: com.mytest.Enquiry</td>
+<td><div><pre>java.lang.AssertionError: Aadhar No Contains Less than 12 numbers expected [true] but found [false]
+	at com.mytest.Enquiry.Aadharno_contain_lessthan_12_numbers(Enquiry.java:390)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+... Removed 19 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1564540047", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1564540047'><pre>java.lang.AssertionError: Aadhar No Contains Less than 12 numbers expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertTrue(Assert.java:44)
+	at com.mytest.Enquiry.Aadharno_contain_lessthan_12_numbers(Enquiry.java:390)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+</pre></div></td>
+<td>0</td>
+<td>com.mytest.Enquiry@776b83cc</td></tr>
+<tr>
+<td title='com.mytest.Enquiry.Aadharno_contain_special_characters()'><b>Aadharno_contain_special_characters</b><br>Test class: com.mytest.Enquiry</td>
+<td><div><pre>java.lang.AssertionError: Aadhar No Contains Spaecial Characters expected [true] but found [false]
+	at com.mytest.Enquiry.Aadharno_contain_special_characters(Enquiry.java:345)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+... Removed 19 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace442975188", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace442975188'><pre>java.lang.AssertionError: Aadhar No Contains Spaecial Characters expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertTrue(Assert.java:44)
+	at com.mytest.Enquiry.Aadharno_contain_special_characters(Enquiry.java:345)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+</pre></div></td>
+<td>0</td>
+<td>com.mytest.Enquiry@776b83cc</td></tr>
+<tr>
+<td title='com.mytest.Enquiry.Blank_Demo_Lecture()'><b>Blank_Demo_Lecture</b><br>Test class: com.mytest.Enquiry</td>
+<td><div><pre>java.lang.AssertionError: Demo Lecture Accepted Blank Field expected [true] but found [false]
+	at com.mytest.Enquiry.Blank_Demo_Lecture(Enquiry.java:951)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+... Removed 19 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1399019750", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1399019750'><pre>java.lang.AssertionError: Demo Lecture Accepted Blank Field expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertTrue(Assert.java:44)
+	at com.mytest.Enquiry.Blank_Demo_Lecture(Enquiry.java:951)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+</pre></div></td>
+<td>0</td>
+<td>com.mytest.Enquiry@776b83cc</td></tr>
+<tr>
+<td title='com.mytest.Enquiry.Blank_Gender_field()'><b>Blank_Gender_field</b><br>Test class: com.mytest.Enquiry</td>
+<td><div><pre>java.lang.AssertionError: Gender field is Blank expected [true] but found [false]
+	at com.mytest.Enquiry.Blank_Gender_field(Enquiry.java:429)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+... Removed 19 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1842171335", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1842171335'><pre>java.lang.AssertionError: Gender field is Blank expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertTrue(Assert.java:44)
+	at com.mytest.Enquiry.Blank_Gender_field(Enquiry.java:429)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+</pre></div></td>
+<td>0</td>
+<td>com.mytest.Enquiry@776b83cc</td></tr>
+<tr>
+<td title='com.mytest.Enquiry.Collegename_contain_Special_Characters()'><b>Collegename_contain_Special_Characters</b><br>Test class: com.mytest.Enquiry</td>
+<td><div><pre>java.lang.AssertionError: College Name Contains Special Characters expected [true] but found [false]
+	at com.mytest.Enquiry.Collegename_contain_Special_Characters(Enquiry.java:233)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+... Removed 19 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace927992507", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace927992507'><pre>java.lang.AssertionError: College Name Contains Special Characters expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertTrue(Assert.java:44)
+	at com.mytest.Enquiry.Collegename_contain_Special_Characters(Enquiry.java:233)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+</pre></div></td>
+<td>0</td>
+<td>com.mytest.Enquiry@776b83cc</td></tr>
+<tr>
+<td title='com.mytest.Enquiry.Follow_Up_Mode()'><b>Follow_Up_Mode</b><br>Test class: com.mytest.Enquiry</td>
+<td><div><pre>java.lang.AssertionError: Follow Up Mode Field NOT Working expected [true] but found [false]
+	at com.mytest.Enquiry.Follow_Up_Mode(Enquiry.java:1243)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+... Removed 19 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace800562510", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace800562510'><pre>java.lang.AssertionError: Follow Up Mode Field NOT Working expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertTrue(Assert.java:44)
+	at com.mytest.Enquiry.Follow_Up_Mode(Enquiry.java:1243)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+</pre></div></td>
+<td>0</td>
+<td>com.mytest.Enquiry@776b83cc</td></tr>
+<tr>
+<td title='com.mytest.Enquiry.Lastname_contain_Special_Characters()'><b>Lastname_contain_Special_Characters</b><br>Test class: com.mytest.Enquiry</td>
+<td><div><pre>java.lang.AssertionError: Last Name Contains Special Characters expected [true] but found [false]
+	at com.mytest.Enquiry.Lastname_contain_Special_Characters(Enquiry.java:177)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+... Removed 19 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace634501647", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace634501647'><pre>java.lang.AssertionError: Last Name Contains Special Characters expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertTrue(Assert.java:44)
+	at com.mytest.Enquiry.Lastname_contain_Special_Characters(Enquiry.java:177)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+</pre></div></td>
+<td>0</td>
+<td>com.mytest.Enquiry@776b83cc</td></tr>
+<tr>
+<td title='com.mytest.Enquiry.Lastname_contain_whitespaces()'><b>Lastname_contain_whitespaces</b><br>Test class: com.mytest.Enquiry</td>
+<td><div><pre>java.lang.AssertionError: Last Name Contains Whitespaces expected [true] but found [false]
+	at com.mytest.Enquiry.Lastname_contain_whitespaces(Enquiry.java:195)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+... Removed 19 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace246570148", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace246570148'><pre>java.lang.AssertionError: Last Name Contains Whitespaces expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertTrue(Assert.java:44)
+	at com.mytest.Enquiry.Lastname_contain_whitespaces(Enquiry.java:195)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+</pre></div></td>
+<td>0</td>
+<td>com.mytest.Enquiry@776b83cc</td></tr>
+<tr>
+<td title='com.mytest.Enquiry.Lastname_contain_whitespaces_at_begining()'><b>Lastname_contain_whitespaces_at_begining</b><br>Test class: com.mytest.Enquiry</td>
+<td><div><pre>java.lang.AssertionError: Last Name Contain Whitespaces at Begining expected [true] but found [false]
+	at com.mytest.Enquiry.Lastname_contain_whitespaces_at_begining(Enquiry.java:213)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+... Removed 19 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace346894982", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace346894982'><pre>java.lang.AssertionError: Last Name Contain Whitespaces at Begining expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertTrue(Assert.java:44)
+	at com.mytest.Enquiry.Lastname_contain_whitespaces_at_begining(Enquiry.java:213)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+</pre></div></td>
+<td>0</td>
+<td>com.mytest.Enquiry@776b83cc</td></tr>
+<tr>
+<td title='com.mytest.Enquiry.Middlename_contain_Special_Characters()'><b>Middlename_contain_Special_Characters</b><br>Test class: com.mytest.Enquiry</td>
+<td><div><pre>java.lang.AssertionError: Middle Name Contains Special Characters expected [true] but found [false]
+	at com.mytest.Enquiry.Middlename_contain_Special_Characters(Enquiry.java:131)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+... Removed 19 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1379724510", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1379724510'><pre>java.lang.AssertionError: Middle Name Contains Special Characters expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertTrue(Assert.java:44)
+	at com.mytest.Enquiry.Middlename_contain_Special_Characters(Enquiry.java:131)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+</pre></div></td>
+<td>0</td>
+<td>com.mytest.Enquiry@776b83cc</td></tr>
+<tr>
+<td title='com.mytest.Enquiry.Middlename_contain_whitespaces()'><b>Middlename_contain_whitespaces</b><br>Test class: com.mytest.Enquiry</td>
+<td><div><pre>java.lang.AssertionError: Middle Name Contains Whitespaces expected [true] but found [false]
+	at com.mytest.Enquiry.Middlename_contain_whitespaces(Enquiry.java:149)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+... Removed 19 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1597798174", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1597798174'><pre>java.lang.AssertionError: Middle Name Contains Whitespaces expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertTrue(Assert.java:44)
+	at com.mytest.Enquiry.Middlename_contain_whitespaces(Enquiry.java:149)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+</pre></div></td>
+<td>0</td>
+<td>com.mytest.Enquiry@776b83cc</td></tr>
+<tr>
+<td title='com.mytest.Enquiry.Middlename_contain_whitespaces_at_begining()'><b>Middlename_contain_whitespaces_at_begining</b><br>Test class: com.mytest.Enquiry</td>
+<td><div><pre>java.lang.AssertionError: Middle Name Contain Whitespaces at Begining expected [true] but found [false]
+	at com.mytest.Enquiry.Middlename_contain_whitespaces_at_begining(Enquiry.java:158)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+... Removed 19 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace24835822", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace24835822'><pre>java.lang.AssertionError: Middle Name Contain Whitespaces at Begining expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertTrue(Assert.java:44)
+	at com.mytest.Enquiry.Middlename_contain_whitespaces_at_begining(Enquiry.java:158)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+</pre></div></td>
+<td>0</td>
+<td>com.mytest.Enquiry@776b83cc</td></tr>
+<tr>
+<td title='com.mytest.Enquiry.Pincode_currentaddress_contain_special_characters()'><b>Pincode_currentaddress_contain_special_characters</b><br>Test class: com.mytest.Enquiry</td>
+<td><div><pre>java.lang.AssertionError: Pincode No Contains Spaecial Characters expected [true] but found [false]
+	at com.mytest.Enquiry.Pincode_currentaddress_contain_special_characters(Enquiry.java:757)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+... Removed 19 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1441935959", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1441935959'><pre>java.lang.AssertionError: Pincode No Contains Spaecial Characters expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertTrue(Assert.java:44)
+	at com.mytest.Enquiry.Pincode_currentaddress_contain_special_characters(Enquiry.java:757)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+</pre></div></td>
+<td>0</td>
+<td>com.mytest.Enquiry@776b83cc</td></tr>
+<tr>
+<td title='com.mytest.Enquiry.Pincode_permanentaddress_contain_special_characters()'><b>Pincode_permanentaddress_contain_special_characters</b><br>Test class: com.mytest.Enquiry</td>
+<td><div><pre>java.lang.AssertionError: Pincode No Contains Spaecial Characters expected [true] but found [false]
+	at com.mytest.Enquiry.Pincode_permanentaddress_contain_special_characters(Enquiry.java:834)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+... Removed 19 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace41808817", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace41808817'><pre>java.lang.AssertionError: Pincode No Contains Spaecial Characters expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertTrue(Assert.java:44)
+	at com.mytest.Enquiry.Pincode_permanentaddress_contain_special_characters(Enquiry.java:834)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+</pre></div></td>
+<td>0</td>
+<td>com.mytest.Enquiry@776b83cc</td></tr>
+<tr>
+<td title='com.mytest.Enquiry.Primary_email_contain_whitespaces_at_begining()'><b>Primary_email_contain_whitespaces_at_begining</b><br>Test class: com.mytest.Enquiry</td>
+<td><div><pre>java.lang.AssertionError: Primary Email contain Whitespaces at Begining expected [true] but found [false]
+	at com.mytest.Enquiry.Primary_email_contain_whitespaces_at_begining(Enquiry.java:653)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+... Removed 19 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1762926472", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1762926472'><pre>java.lang.AssertionError: Primary Email contain Whitespaces at Begining expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertTrue(Assert.java:44)
+	at com.mytest.Enquiry.Primary_email_contain_whitespaces_at_begining(Enquiry.java:653)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+</pre></div></td>
+<td>1</td>
+<td>com.mytest.Enquiry@776b83cc</td></tr>
+<tr>
+<td title='com.mytest.Enquiry.Primary_mobno_contain_lessthan_10_numbers()'><b>Primary_mobno_contain_lessthan_10_numbers</b><br>Test class: com.mytest.Enquiry</td>
+<td><div><pre>java.lang.AssertionError: Primary Mobile No Contains Less than 10 numbers expected [true] but found [false]
+	at com.mytest.Enquiry.Primary_mobno_contain_lessthan_10_numbers(Enquiry.java:531)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+... Removed 19 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace947254823", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace947254823'><pre>java.lang.AssertionError: Primary Mobile No Contains Less than 10 numbers expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertTrue(Assert.java:44)
+	at com.mytest.Enquiry.Primary_mobno_contain_lessthan_10_numbers(Enquiry.java:531)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+</pre></div></td>
+<td>0</td>
+<td>com.mytest.Enquiry@776b83cc</td></tr>
+<tr>
+<td title='com.mytest.Enquiry.Primary_mobno_contain_special_characters()'><b>Primary_mobno_contain_special_characters</b><br>Test class: com.mytest.Enquiry</td>
+<td><div><pre>java.lang.AssertionError: Primary Mobile No Contains Spaecial Characters expected [true] but found [false]
+	at com.mytest.Enquiry.Primary_mobno_contain_special_characters(Enquiry.java:476)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+... Removed 19 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1120978230", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1120978230'><pre>java.lang.AssertionError: Primary Mobile No Contains Spaecial Characters expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertTrue(Assert.java:44)
+	at com.mytest.Enquiry.Primary_mobno_contain_special_characters(Enquiry.java:476)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+</pre></div></td>
+<td>0</td>
+<td>com.mytest.Enquiry@776b83cc</td></tr>
+<tr>
+<td title='com.mytest.Enquiry.Qualification_contain_Special_Characters()'><b>Qualification_contain_Special_Characters</b><br>Test class: com.mytest.Enquiry</td>
+<td><div><pre>java.lang.AssertionError: College Name Contains Special Characters expected [true] but found [false]
+	at com.mytest.Enquiry.Qualification_contain_Special_Characters(Enquiry.java:289)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+... Removed 19 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace167386411", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace167386411'><pre>java.lang.AssertionError: College Name Contains Special Characters expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertTrue(Assert.java:44)
+	at com.mytest.Enquiry.Qualification_contain_Special_Characters(Enquiry.java:289)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+</pre></div></td>
+<td>0</td>
+<td>com.mytest.Enquiry@776b83cc</td></tr>
+<tr>
+<td title='com.mytest.Enquiry.Qualification_contain_numbers()'><b>Qualification_contain_numbers</b><br>Test class: com.mytest.Enquiry</td>
+<td><div><pre>java.lang.AssertionError: College Name Contains Numbers expected [true] but found [false]
+	at com.mytest.Enquiry.Qualification_contain_numbers(Enquiry.java:298)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+... Removed 19 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace729060069", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace729060069'><pre>java.lang.AssertionError: College Name Contains Numbers expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertTrue(Assert.java:44)
+	at com.mytest.Enquiry.Qualification_contain_numbers(Enquiry.java:298)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+</pre></div></td>
+<td>0</td>
+<td>com.mytest.Enquiry@776b83cc</td></tr>
+<tr>
+<td title='com.mytest.Enquiry.Secondary_email_contain_whitespaces_at_begining()'><b>Secondary_email_contain_whitespaces_at_begining</b><br>Test class: com.mytest.Enquiry</td>
+<td><div><pre>java.lang.AssertionError: Secondary Email contain Whitespaces at Begining expected [true] but found [false]
+	at com.mytest.Enquiry.Secondary_email_contain_whitespaces_at_begining(Enquiry.java:704)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+... Removed 19 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2103238920", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2103238920'><pre>java.lang.AssertionError: Secondary Email contain Whitespaces at Begining expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertTrue(Assert.java:44)
+	at com.mytest.Enquiry.Secondary_email_contain_whitespaces_at_begining(Enquiry.java:704)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+</pre></div></td>
+<td>1</td>
+<td>com.mytest.Enquiry@776b83cc</td></tr>
+<tr>
+<td title='com.mytest.Enquiry.Secondary_mobno_contain_lessthan_10_numbers()'><b>Secondary_mobno_contain_lessthan_10_numbers</b><br>Test class: com.mytest.Enquiry</td>
+<td><div><pre>java.lang.AssertionError: Secondary Mobile No Contains Less than 10 numbers expected [true] but found [false]
+	at com.mytest.Enquiry.Secondary_mobno_contain_lessthan_10_numbers(Enquiry.java:603)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+... Removed 19 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1878160693", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1878160693'><pre>java.lang.AssertionError: Secondary Mobile No Contains Less than 10 numbers expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertTrue(Assert.java:44)
+	at com.mytest.Enquiry.Secondary_mobno_contain_lessthan_10_numbers(Enquiry.java:603)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+</pre></div></td>
+<td>0</td>
+<td>com.mytest.Enquiry@776b83cc</td></tr>
+<tr>
+<td title='com.mytest.Enquiry.Secondary_mobno_contain_special_characters()'><b>Secondary_mobno_contain_special_characters</b><br>Test class: com.mytest.Enquiry</td>
+<td><div><pre>java.lang.AssertionError: Secondary Mobile No Contains Spaecial Characters expected [true] but found [false]
+	at com.mytest.Enquiry.Secondary_mobno_contain_special_characters(Enquiry.java:549)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+... Removed 19 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1762557651", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1762557651'><pre>java.lang.AssertionError: Secondary Mobile No Contains Spaecial Characters expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertTrue(Assert.java:44)
+	at com.mytest.Enquiry.Secondary_mobno_contain_special_characters(Enquiry.java:549)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+</pre></div></td>
+<td>0</td>
+<td>com.mytest.Enquiry@776b83cc</td></tr>
+<tr>
+<td title='com.mytest.Enquiry.Studentname_contain_Special_Characters()'><b>Studentname_contain_Special_Characters</b><br>Test class: com.mytest.Enquiry</td>
+<td><div><pre>java.lang.AssertionError: Student Name Contains Special Characters expected [true] but found [false]
+	at com.mytest.Enquiry.Studentname_contain_Special_Characters(Enquiry.java:75)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+... Removed 19 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1618000502", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1618000502'><pre>java.lang.AssertionError: Student Name Contains Special Characters expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertTrue(Assert.java:44)
+	at com.mytest.Enquiry.Studentname_contain_Special_Characters(Enquiry.java:75)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+</pre></div></td>
+<td>5</td>
+<td>com.mytest.Enquiry@776b83cc</td></tr>
+<tr>
+<td title='com.mytest.Enquiry.Studentname_contain_whitespaces()'><b>Studentname_contain_whitespaces</b><br>Test class: com.mytest.Enquiry</td>
+<td><div><pre>java.lang.AssertionError: Student Name Contains Whitespaces expected [true] but found [false]
+	at com.mytest.Enquiry.Studentname_contain_whitespaces(Enquiry.java:93)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+... Removed 19 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace681684176", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace681684176'><pre>java.lang.AssertionError: Student Name Contains Whitespaces expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertTrue(Assert.java:44)
+	at com.mytest.Enquiry.Studentname_contain_whitespaces(Enquiry.java:93)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+</pre></div></td>
+<td>0</td>
+<td>com.mytest.Enquiry@776b83cc</td></tr>
+<tr>
+<td title='com.mytest.Enquiry.Studentname_contain_whitespaces_at_begining()'><b>Studentname_contain_whitespaces_at_begining</b><br>Test class: com.mytest.Enquiry</td>
+<td><div><pre>java.lang.AssertionError: Student Name Contain Whitespaces at Begining expected [true] but found [false]
+	at com.mytest.Enquiry.Studentname_contain_whitespaces_at_begining(Enquiry.java:111)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+... Removed 19 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2101141195", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2101141195'><pre>java.lang.AssertionError: Student Name Contain Whitespaces at Begining expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertTrue(Assert.java:44)
+	at com.mytest.Enquiry.Studentname_contain_whitespaces_at_begining(Enquiry.java:111)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+</pre></div></td>
+<td>0</td>
+<td>com.mytest.Enquiry@776b83cc</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.mytest.Enquiry.Aadharno_contain_alphabets()'><b>Aadharno_contain_alphabets</b><br>Test class: com.mytest.Enquiry</td>
+<td></td>
+<td>0</td>
+<td>com.mytest.Enquiry@776b83cc</td></tr>
+<tr>
+<td title='com.mytest.Enquiry.Aadharno_contain_numbers()'><b>Aadharno_contain_numbers</b><br>Test class: com.mytest.Enquiry</td>
+<td></td>
+<td>0</td>
+<td>com.mytest.Enquiry@776b83cc</td></tr>
+<tr>
+<td title='com.mytest.Enquiry.Aadharno_contain_whitespaces_at_begining()'><b>Aadharno_contain_whitespaces_at_begining</b><br>Test class: com.mytest.Enquiry</td>
+<td></td>
+<td>0</td>
+<td>com.mytest.Enquiry@776b83cc</td></tr>
+<tr>
+<td title='com.mytest.Enquiry.Add_Course()'><b>Add_Course</b><br>Test class: com.mytest.Enquiry</td>
+<td></td>
+<td>12</td>
+<td>com.mytest.Enquiry@776b83cc</td></tr>
+<tr>
+<td title='com.mytest.Enquiry.Assign_to()'><b>Assign_to</b><br>Test class: com.mytest.Enquiry</td>
+<td></td>
+<td>0</td>
+<td>com.mytest.Enquiry@776b83cc</td></tr>
+<tr>
+<td title='com.mytest.Enquiry.Birthdate_Field_is_Blank()'><b>Birthdate_Field_is_Blank</b><br>Test class: com.mytest.Enquiry</td>
+<td></td>
+<td>1</td>
+<td>com.mytest.Enquiry@776b83cc</td></tr>
+<tr>
+<td title='com.mytest.Enquiry.Birthdate_functionality()'><b>Birthdate_functionality</b><br>Test class: com.mytest.Enquiry</td>
+<td></td>
+<td>1</td>
+<td>com.mytest.Enquiry@776b83cc</td></tr>
+<tr>
+<td title='com.mytest.Enquiry.Blank_Follow_Up_Mode()'><b>Blank_Follow_Up_Mode</b><br>Test class: com.mytest.Enquiry</td>
+<td></td>
+<td>0</td>
+<td>com.mytest.Enquiry@776b83cc</td></tr>
+<tr>
+<td title='com.mytest.Enquiry.Blank_Follow_up_Details()'><b>Blank_Follow_up_Details</b><br>Test class: com.mytest.Enquiry</td>
+<td></td>
+<td>0</td>
+<td>com.mytest.Enquiry@776b83cc</td></tr>
+<tr>
+<td title='com.mytest.Enquiry.Blank_Interest_level()'><b>Blank_Interest_level</b><br>Test class: com.mytest.Enquiry</td>
+<td></td>
+<td>0</td>
+<td>com.mytest.Enquiry@776b83cc</td></tr>
+<tr>
+<td title='com.mytest.Enquiry.Blank_Lead_Source()'><b>Blank_Lead_Source</b><br>Test class: com.mytest.Enquiry</td>
+<td></td>
+<td>0</td>
+<td>com.mytest.Enquiry@776b83cc</td></tr>
+<tr>
+<td title='com.mytest.Enquiry.Blank_Next_Follow_Up_Date()'><b>Blank_Next_Follow_Up_Date</b><br>Test class: com.mytest.Enquiry</td>
+<td></td>
+<td>0</td>
+<td>com.mytest.Enquiry@776b83cc</td></tr>
+<tr>
+<td title='com.mytest.Enquiry.Blank_Next_Follow_Update()'><b>Blank_Next_Follow_Update</b><br>Test class: com.mytest.Enquiry</td>
+<td></td>
+<td>8</td>
+<td>com.mytest.Enquiry@776b83cc</td></tr>
+<tr>
+<td title='com.mytest.Enquiry.Blank_Notes()'><b>Blank_Notes</b><br>Test class: com.mytest.Enquiry</td>
+<td></td>
+<td>0</td>
+<td>com.mytest.Enquiry@776b83cc</td></tr>
+<tr>
+<td title='com.mytest.Enquiry.Blank_current_address()'><b>Blank_current_address</b><br>Test class: com.mytest.Enquiry</td>
+<td></td>
+<td>1</td>
+<td>com.mytest.Enquiry@776b83cc</td></tr>
+<tr>
+<td title='com.mytest.Enquiry.Collegename_contain_alphabets()'><b>Collegename_contain_alphabets</b><br>Test class: com.mytest.Enquiry</td>
+<td></td>
+<td>0</td>
+<td>com.mytest.Enquiry@776b83cc</td></tr>
+<tr>
+<td title='com.mytest.Enquiry.Collegename_contain_numbers()'><b>Collegename_contain_numbers</b><br>Test class: com.mytest.Enquiry</td>
+<td></td>
+<td>0</td>
+<td>com.mytest.Enquiry@776b83cc</td></tr>
+<tr>
+<td title='com.mytest.Enquiry.Collegename_contain_whitespaces()'><b>Collegename_contain_whitespaces</b><br>Test class: com.mytest.Enquiry</td>
+<td></td>
+<td>0</td>
+<td>com.mytest.Enquiry@776b83cc</td></tr>
+<tr>
+<td title='com.mytest.Enquiry.Collegename_contain_whitespaces_at_begining()'><b>Collegename_contain_whitespaces_at_begining</b><br>Test class: com.mytest.Enquiry</td>
+<td></td>
+<td>0</td>
+<td>com.mytest.Enquiry@776b83cc</td></tr>
+<tr>
+<td title='com.mytest.Enquiry.Collegename_field_is_Blank()'><b>Collegename_field_is_Blank</b><br>Test class: com.mytest.Enquiry</td>
+<td></td>
+<td>1</td>
+<td>com.mytest.Enquiry@776b83cc</td></tr>
+<tr>
+<td title='com.mytest.Enquiry.Communicationdetails_next_button_functionality()'><b>Communicationdetails_next_button_functionality</b><br>Test class: com.mytest.Enquiry</td>
+<td></td>
+<td>0</td>
+<td>com.mytest.Enquiry@776b83cc</td></tr>
+<tr>
+<td title='com.mytest.Enquiry.Course_interested_functionality()'><b>Course_interested_functionality</b><br>Test class: com.mytest.Enquiry</td>
+<td></td>
+<td>0</td>
+<td>com.mytest.Enquiry@776b83cc</td></tr>
+<tr>
+<td title='com.mytest.Enquiry.Course_interested_is_Blank()'><b>Course_interested_is_Blank</b><br>Test class: com.mytest.Enquiry</td>
+<td></td>
+<td>0</td>
+<td>com.mytest.Enquiry@776b83cc</td></tr>
+<tr>
+<td title='com.mytest.Enquiry.Created_Date()'><b>Created_Date</b><br>Test class: com.mytest.Enquiry</td>
+<td></td>
+<td>0</td>
+<td>com.mytest.Enquiry@776b83cc</td></tr>
+<tr>
+<td title='com.mytest.Enquiry.Delete_Enquiry()'><b>Delete_Enquiry</b><br>Test class: com.mytest.Enquiry</td>
+<td></td>
+<td>4</td>
+<td>com.mytest.Enquiry@776b83cc</td></tr>
+<tr>
+<td title='com.mytest.Enquiry.Delete_Enquiry_Cancel_Button()'><b>Delete_Enquiry_Cancel_Button</b><br>Test class: com.mytest.Enquiry</td>
+<td></td>
+<td>6</td>
+<td>com.mytest.Enquiry@776b83cc</td></tr>
+<tr>
+<td title='com.mytest.Enquiry.Demo_lecture_functionality()'><b>Demo_lecture_functionality</b><br>Test class: com.mytest.Enquiry</td>
+<td></td>
+<td>0</td>
+<td>com.mytest.Enquiry@776b83cc</td></tr>
+<tr>
+<td title='com.mytest.Enquiry.Finish_Button_functionality()'><b>Finish_Button_functionality</b><br>Test class: com.mytest.Enquiry</td>
+<td></td>
+<td>4</td>
+<td>com.mytest.Enquiry@776b83cc</td></tr>
+<tr>
+<td title='com.mytest.Enquiry.FollowUpDetails_next_button_functionality()'><b>FollowUpDetails_next_button_functionality</b><br>Test class: com.mytest.Enquiry</td>
+<td></td>
+<td>0</td>
+<td>com.mytest.Enquiry@776b83cc</td></tr>
+<tr>
+<td title='com.mytest.Enquiry.Follow_Up_Cancel_Button()'><b>Follow_Up_Cancel_Button</b><br>Test class: com.mytest.Enquiry</td>
+<td></td>
+<td>9</td>
+<td>com.mytest.Enquiry@776b83cc</td></tr>
+<tr>
+<td title='com.mytest.Enquiry.Follow_up_Details_functionality()'><b>Follow_up_Details_functionality</b><br>Test class: com.mytest.Enquiry</td>
+<td></td>
+<td>0</td>
+<td>com.mytest.Enquiry@776b83cc</td></tr>
+<tr>
+<td title='com.mytest.Enquiry.Followup_save_button_functionality()'><b>Followup_save_button_functionality</b><br>Test class: com.mytest.Enquiry</td>
+<td></td>
+<td>3</td>
+<td>com.mytest.Enquiry@776b83cc</td></tr>
+<tr>
+<td title='com.mytest.Enquiry.Gender_functionality()'><b>Gender_functionality</b><br>Test class: com.mytest.Enquiry</td>
+<td></td>
+<td>0</td>
+<td>com.mytest.Enquiry@776b83cc</td></tr>
+<tr>
+<td title='com.mytest.Enquiry.Interest_level_functionality()'><b>Interest_level_functionality</b><br>Test class: com.mytest.Enquiry</td>
+<td></td>
+<td>0</td>
+<td>com.mytest.Enquiry@776b83cc</td></tr>
+<tr>
+<td title='com.mytest.Enquiry.Lastname_contain_alphabets()'><b>Lastname_contain_alphabets</b><br>Test class: com.mytest.Enquiry</td>
+<td></td>
+<td>0</td>
+<td>com.mytest.Enquiry@776b83cc</td></tr>
+<tr>
+<td title='com.mytest.Enquiry.Lastname_contain_numbers()'><b>Lastname_contain_numbers</b><br>Test class: com.mytest.Enquiry</td>
+<td></td>
+<td>0</td>
+<td>com.mytest.Enquiry@776b83cc</td></tr>
+<tr>
+<td title='com.mytest.Enquiry.Lastname_field_is_Blank()'><b>Lastname_field_is_Blank</b><br>Test class: com.mytest.Enquiry</td>
+<td></td>
+<td>2</td>
+<td>com.mytest.Enquiry@776b83cc</td></tr>
+<tr>
+<td title='com.mytest.Enquiry.Lead_Source_functionality()'><b>Lead_Source_functionality</b><br>Test class: com.mytest.Enquiry</td>
+<td></td>
+<td>0</td>
+<td>com.mytest.Enquiry@776b83cc</td></tr>
+<tr>
+<td title='com.mytest.Enquiry.Middlename_contain_alphabets()'><b>Middlename_contain_alphabets</b><br>Test class: com.mytest.Enquiry</td>
+<td></td>
+<td>0</td>
+<td>com.mytest.Enquiry@776b83cc</td></tr>
+<tr>
+<td title='com.mytest.Enquiry.Middlename_contain_numbers()'><b>Middlename_contain_numbers</b><br>Test class: com.mytest.Enquiry</td>
+<td></td>
+<td>0</td>
+<td>com.mytest.Enquiry@776b83cc</td></tr>
+<tr>
+<td title='com.mytest.Enquiry.Multiple_Course_Interested()'><b>Multiple_Course_Interested</b><br>Test class: com.mytest.Enquiry</td>
+<td></td>
+<td>0</td>
+<td>com.mytest.Enquiry@776b83cc</td></tr>
+<tr>
+<td title='com.mytest.Enquiry.Next_Follow_Up_Date()'><b>Next_Follow_Up_Date</b><br>Test class: com.mytest.Enquiry</td>
+<td></td>
+<td>0</td>
+<td>com.mytest.Enquiry@776b83cc</td></tr>
+<tr>
+<td title='com.mytest.Enquiry.Next_Follow_Update()'><b>Next_Follow_Update</b><br>Test class: com.mytest.Enquiry</td>
+<td></td>
+<td>0</td>
+<td>com.mytest.Enquiry@776b83cc</td></tr>
+<tr>
+<td title='com.mytest.Enquiry.Notes()'><b>Notes</b><br>Test class: com.mytest.Enquiry</td>
+<td></td>
+<td>0</td>
+<td>com.mytest.Enquiry@776b83cc</td></tr>
+<tr>
+<td title='com.mytest.Enquiry.PersonalInfo_next_button_functionality()'><b>PersonalInfo_next_button_functionality</b><br>Test class: com.mytest.Enquiry</td>
+<td></td>
+<td>1</td>
+<td>com.mytest.Enquiry@776b83cc</td></tr>
+<tr>
+<td title='com.mytest.Enquiry.Pincode_currentaddress_contain_alphabets()'><b>Pincode_currentaddress_contain_alphabets</b><br>Test class: com.mytest.Enquiry</td>
+<td></td>
+<td>0</td>
+<td>com.mytest.Enquiry@776b83cc</td></tr>
+<tr>
+<td title='com.mytest.Enquiry.Pincode_currentaddress_contain_lessthan_6_numbers()'><b>Pincode_currentaddress_contain_lessthan_6_numbers</b><br>Test class: com.mytest.Enquiry</td>
+<td></td>
+<td>0</td>
+<td>com.mytest.Enquiry@776b83cc</td></tr>
+<tr>
+<td title='com.mytest.Enquiry.Pincode_currentaddress_contain_morethan_6_numbers()'><b>Pincode_currentaddress_contain_morethan_6_numbers</b><br>Test class: com.mytest.Enquiry</td>
+<td></td>
+<td>0</td>
+<td>com.mytest.Enquiry@776b83cc</td></tr>
+<tr>
+<td title='com.mytest.Enquiry.Pincode_currentaddress_contain_numbers()'><b>Pincode_currentaddress_contain_numbers</b><br>Test class: com.mytest.Enquiry</td>
+<td></td>
+<td>0</td>
+<td>com.mytest.Enquiry@776b83cc</td></tr>
+<tr>
+<td title='com.mytest.Enquiry.Pincode_currentaddress_contain_whitespaces()'><b>Pincode_currentaddress_contain_whitespaces</b><br>Test class: com.mytest.Enquiry</td>
+<td></td>
+<td>0</td>
+<td>com.mytest.Enquiry@776b83cc</td></tr>
+<tr>
+<td title='com.mytest.Enquiry.Pincode_currentaddress_contain_whitespaces_at_begining()'><b>Pincode_currentaddress_contain_whitespaces_at_begining</b><br>Test class: com.mytest.Enquiry</td>
+<td></td>
+<td>0</td>
+<td>com.mytest.Enquiry@776b83cc</td></tr>
+<tr>
+<td title='com.mytest.Enquiry.Pincode_currentaddress_field_is_Blank()'><b>Pincode_currentaddress_field_is_Blank</b><br>Test class: com.mytest.Enquiry</td>
+<td></td>
+<td>1</td>
+<td>com.mytest.Enquiry@776b83cc</td></tr>
+<tr>
+<td title='com.mytest.Enquiry.Pincode_permanentaddress_contain_alphabets()'><b>Pincode_permanentaddress_contain_alphabets</b><br>Test class: com.mytest.Enquiry</td>
+<td></td>
+<td>0</td>
+<td>com.mytest.Enquiry@776b83cc</td></tr>
+<tr>
+<td title='com.mytest.Enquiry.Pincode_permanentaddress_contain_lessthan_6_numbers()'><b>Pincode_permanentaddress_contain_lessthan_6_numbers</b><br>Test class: com.mytest.Enquiry</td>
+<td></td>
+<td>3</td>
+<td>com.mytest.Enquiry@776b83cc</td></tr>
+<tr>
+<td title='com.mytest.Enquiry.Pincode_permanentaddress_contain_morethan_6_numbers()'><b>Pincode_permanentaddress_contain_morethan_6_numbers</b><br>Test class: com.mytest.Enquiry</td>
+<td></td>
+<td>0</td>
+<td>com.mytest.Enquiry@776b83cc</td></tr>
+<tr>
+<td title='com.mytest.Enquiry.Pincode_permanentaddress_contain_numbers()'><b>Pincode_permanentaddress_contain_numbers</b><br>Test class: com.mytest.Enquiry</td>
+<td></td>
+<td>0</td>
+<td>com.mytest.Enquiry@776b83cc</td></tr>
+<tr>
+<td title='com.mytest.Enquiry.Pincode_permanentaddress_contain_whitespaces()'><b>Pincode_permanentaddress_contain_whitespaces</b><br>Test class: com.mytest.Enquiry</td>
+<td></td>
+<td>0</td>
+<td>com.mytest.Enquiry@776b83cc</td></tr>
+<tr>
+<td title='com.mytest.Enquiry.Pincode_permanentaddress_contain_whitespaces_at_begining()'><b>Pincode_permanentaddress_contain_whitespaces_at_begining</b><br>Test class: com.mytest.Enquiry</td>
+<td></td>
+<td>0</td>
+<td>com.mytest.Enquiry@776b83cc</td></tr>
+<tr>
+<td title='com.mytest.Enquiry.Primary_email_contain_whitespaces()'><b>Primary_email_contain_whitespaces</b><br>Test class: com.mytest.Enquiry</td>
+<td></td>
+<td>0</td>
+<td>com.mytest.Enquiry@776b83cc</td></tr>
+<tr>
+<td title='com.mytest.Enquiry.Primary_email_field_is_Blank()'><b>Primary_email_field_is_Blank</b><br>Test class: com.mytest.Enquiry</td>
+<td></td>
+<td>0</td>
+<td>com.mytest.Enquiry@776b83cc</td></tr>
+<tr>
+<td title='com.mytest.Enquiry.Primary_email_valid()'><b>Primary_email_valid</b><br>Test class: com.mytest.Enquiry</td>
+<td></td>
+<td>0</td>
+<td>com.mytest.Enquiry@776b83cc</td></tr>
+<tr>
+<td title='com.mytest.Enquiry.Primary_mobno_contain_alphabets()'><b>Primary_mobno_contain_alphabets</b><br>Test class: com.mytest.Enquiry</td>
+<td></td>
+<td>0</td>
+<td>com.mytest.Enquiry@776b83cc</td></tr>
+<tr>
+<td title='com.mytest.Enquiry.Primary_mobno_contain_greaterthan_10_numbers()'><b>Primary_mobno_contain_greaterthan_10_numbers</b><br>Test class: com.mytest.Enquiry</td>
+<td></td>
+<td>0</td>
+<td>com.mytest.Enquiry@776b83cc</td></tr>
+<tr>
+<td title='com.mytest.Enquiry.Primary_mobno_contain_numbers()'><b>Primary_mobno_contain_numbers</b><br>Test class: com.mytest.Enquiry</td>
+<td></td>
+<td>0</td>
+<td>com.mytest.Enquiry@776b83cc</td></tr>
+<tr>
+<td title='com.mytest.Enquiry.Primary_mobno_contain_whitespaces()'><b>Primary_mobno_contain_whitespaces</b><br>Test class: com.mytest.Enquiry</td>
+<td></td>
+<td>0</td>
+<td>com.mytest.Enquiry@776b83cc</td></tr>
+<tr>
+<td title='com.mytest.Enquiry.Primary_mobno_contain_whitespaces_at_begining()'><b>Primary_mobno_contain_whitespaces_at_begining</b><br>Test class: com.mytest.Enquiry</td>
+<td></td>
+<td>0</td>
+<td>com.mytest.Enquiry@776b83cc</td></tr>
+<tr>
+<td title='com.mytest.Enquiry.Primary_mobno_field_is_Blank()'><b>Primary_mobno_field_is_Blank</b><br>Test class: com.mytest.Enquiry</td>
+<td></td>
+<td>1</td>
+<td>com.mytest.Enquiry@776b83cc</td></tr>
+<tr>
+<td title='com.mytest.Enquiry.Qualification_contain_alphabets()'><b>Qualification_contain_alphabets</b><br>Test class: com.mytest.Enquiry</td>
+<td></td>
+<td>0</td>
+<td>com.mytest.Enquiry@776b83cc</td></tr>
+<tr>
+<td title='com.mytest.Enquiry.Qualification_contain_whitespaces()'><b>Qualification_contain_whitespaces</b><br>Test class: com.mytest.Enquiry</td>
+<td></td>
+<td>0</td>
+<td>com.mytest.Enquiry@776b83cc</td></tr>
+<tr>
+<td title='com.mytest.Enquiry.Qualification_contain_whitespaces_at_begining()'><b>Qualification_contain_whitespaces_at_begining</b><br>Test class: com.mytest.Enquiry</td>
+<td></td>
+<td>0</td>
+<td>com.mytest.Enquiry@776b83cc</td></tr>
+<tr>
+<td title='com.mytest.Enquiry.Qualification_field_is_Blank()'><b>Qualification_field_is_Blank</b><br>Test class: com.mytest.Enquiry</td>
+<td></td>
+<td>2</td>
+<td>com.mytest.Enquiry@776b83cc</td></tr>
+<tr>
+<td title='com.mytest.Enquiry.Reference_Name_functionality()'><b>Reference_Name_functionality</b><br>Test class: com.mytest.Enquiry</td>
+<td></td>
+<td>0</td>
+<td>com.mytest.Enquiry@776b83cc</td></tr>
+<tr>
+<td title='com.mytest.Enquiry.Secondary_email_contain_whitespaces()'><b>Secondary_email_contain_whitespaces</b><br>Test class: com.mytest.Enquiry</td>
+<td></td>
+<td>5</td>
+<td>com.mytest.Enquiry@776b83cc</td></tr>
+<tr>
+<td title='com.mytest.Enquiry.Secondary_email_valid()'><b>Secondary_email_valid</b><br>Test class: com.mytest.Enquiry</td>
+<td></td>
+<td>0</td>
+<td>com.mytest.Enquiry@776b83cc</td></tr>
+<tr>
+<td title='com.mytest.Enquiry.Secondary_mobno_contain_alphabets()'><b>Secondary_mobno_contain_alphabets</b><br>Test class: com.mytest.Enquiry</td>
+<td></td>
+<td>0</td>
+<td>com.mytest.Enquiry@776b83cc</td></tr>
+<tr>
+<td title='com.mytest.Enquiry.Secondary_mobno_contain_greaterthan_10_numbers()'><b>Secondary_mobno_contain_greaterthan_10_numbers</b><br>Test class: com.mytest.Enquiry</td>
+<td></td>
+<td>0</td>
+<td>com.mytest.Enquiry@776b83cc</td></tr>
+<tr>
+<td title='com.mytest.Enquiry.Secondary_mobno_contain_numbers()'><b>Secondary_mobno_contain_numbers</b><br>Test class: com.mytest.Enquiry</td>
+<td></td>
+<td>0</td>
+<td>com.mytest.Enquiry@776b83cc</td></tr>
+<tr>
+<td title='com.mytest.Enquiry.Secondary_mobno_contain_whitespaces()'><b>Secondary_mobno_contain_whitespaces</b><br>Test class: com.mytest.Enquiry</td>
+<td></td>
+<td>0</td>
+<td>com.mytest.Enquiry@776b83cc</td></tr>
+<tr>
+<td title='com.mytest.Enquiry.Secondary_mobno_contain_whitespaces_at_begining()'><b>Secondary_mobno_contain_whitespaces_at_begining</b><br>Test class: com.mytest.Enquiry</td>
+<td></td>
+<td>0</td>
+<td>com.mytest.Enquiry@776b83cc</td></tr>
+<tr>
+<td title='com.mytest.Enquiry.Studentname_contain_alphabets()'><b>Studentname_contain_alphabets</b><br>Test class: com.mytest.Enquiry</td>
+<td></td>
+<td>0</td>
+<td>com.mytest.Enquiry@776b83cc</td></tr>
+<tr>
+<td title='com.mytest.Enquiry.Studentname_contain_numbers()'><b>Studentname_contain_numbers</b><br>Test class: com.mytest.Enquiry</td>
+<td></td>
+<td>0</td>
+<td>com.mytest.Enquiry@776b83cc</td></tr>
+<tr>
+<td title='com.mytest.Enquiry.Studentname_field_is_Blank()'><b>Studentname_field_is_Blank</b><br>Test class: com.mytest.Enquiry</td>
+<td></td>
+<td>2</td>
+<td>com.mytest.Enquiry@776b83cc</td></tr>
+<tr>
+<td title='com.mytest.Enquiry.Todays_Created_Date()'><b>Todays_Created_Date</b><br>Test class: com.mytest.Enquiry</td>
+<td></td>
+<td>0</td>
+<td>com.mytest.Enquiry@776b83cc</td></tr>
+<tr>
+<td title='com.mytest.Enquiry.Update_functionalty()'><b>Update_functionalty</b><br>Test class: com.mytest.Enquiry</td>
+<td></td>
+<td>14</td>
+<td>com.mytest.Enquiry@776b83cc</td></tr>
+<tr>
+<td title='com.mytest.Enquiry.Valid_current_address()'><b>Valid_current_address</b><br>Test class: com.mytest.Enquiry</td>
+<td></td>
+<td>0</td>
+<td>com.mytest.Enquiry@776b83cc</td></tr>
+<tr>
+<td title='com.mytest.Enquiry.Valid_permanent_address()'><b>Valid_permanent_address</b><br>Test class: com.mytest.Enquiry</td>
+<td></td>
+<td>1</td>
+<td>com.mytest.Enquiry@776b83cc</td></tr>
+</table><p>
+</body>
+</html>

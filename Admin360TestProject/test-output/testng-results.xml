@@ -1,0 +1,1327 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="7" total="120" passed="87" failed="26" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2018-08-22T04:59:59Z" name="Admin360TestProject" finished-at="2018-08-22T05:02:17Z" duration-ms="137805">
+    <groups>
+    </groups>
+    <test started-at="2018-08-22T04:59:59Z" name="Login" finished-at="2018-08-22T05:00:12Z" duration-ms="12317">
+      <class name="com.mytest.Login">
+        <test-method signature="login()[pri:0, instance:com.mytest.Login@7530ad9c]" started-at="2018-08-22T04:59:59Z" name="login" finished-at="2018-08-22T05:00:12Z" duration-ms="12262" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+      </class> <!-- com.mytest.Login -->
+    </test> <!-- Login -->
+    <test started-at="2018-08-22T05:00:12Z" name="Enquiry" finished-at="2018-08-22T05:02:17Z" duration-ms="125217">
+      <class name="com.mytest.Enquiry">
+        <test-method signature="Add_Course()[pri:0, instance:com.mytest.Enquiry@776b83cc]" started-at="2018-08-22T05:00:12Z" name="Add_Course" finished-at="2018-08-22T05:00:25Z" duration-ms="12778" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Add_Course -->
+        <test-method signature="Studentname_contain_Special_Characters()[pri:0, instance:com.mytest.Enquiry@776b83cc]" started-at="2018-08-22T05:00:25Z" name="Studentname_contain_Special_Characters" finished-at="2018-08-22T05:00:30Z" duration-ms="5592" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Student Name Contains Special Characters expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Student Name Contains Special Characters expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertTrue(Assert.java:44)
+at com.mytest.Enquiry.Studentname_contain_Special_Characters(Enquiry.java:75)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+at java.base/java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Studentname_contain_Special_Characters -->
+        <test-method signature="Studentname_contain_numbers()[pri:0, instance:com.mytest.Enquiry@776b83cc]" started-at="2018-08-22T05:00:30Z" name="Studentname_contain_numbers" finished-at="2018-08-22T05:00:31Z" duration-ms="194" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Studentname_contain_numbers -->
+        <test-method signature="Studentname_contain_whitespaces()[pri:0, instance:com.mytest.Enquiry@776b83cc]" started-at="2018-08-22T05:00:31Z" name="Studentname_contain_whitespaces" finished-at="2018-08-22T05:00:31Z" duration-ms="334" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Student Name Contains Whitespaces expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Student Name Contains Whitespaces expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertTrue(Assert.java:44)
+at com.mytest.Enquiry.Studentname_contain_whitespaces(Enquiry.java:93)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+at java.base/java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Studentname_contain_whitespaces -->
+        <test-method signature="Studentname_contain_alphabets()[pri:0, instance:com.mytest.Enquiry@776b83cc]" started-at="2018-08-22T05:00:31Z" name="Studentname_contain_alphabets" finished-at="2018-08-22T05:00:31Z" duration-ms="298" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Studentname_contain_alphabets -->
+        <test-method signature="Studentname_contain_whitespaces_at_begining()[pri:0, instance:com.mytest.Enquiry@776b83cc]" started-at="2018-08-22T05:00:31Z" name="Studentname_contain_whitespaces_at_begining" finished-at="2018-08-22T05:00:31Z" duration-ms="312" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Student Name Contain Whitespaces at Begining expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Student Name Contain Whitespaces at Begining expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertTrue(Assert.java:44)
+at com.mytest.Enquiry.Studentname_contain_whitespaces_at_begining(Enquiry.java:111)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+at java.base/java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Studentname_contain_whitespaces_at_begining -->
+        <test-method signature="Studentname_field_is_Blank()[pri:0, instance:com.mytest.Enquiry@776b83cc]" started-at="2018-08-22T05:00:31Z" name="Studentname_field_is_Blank" finished-at="2018-08-22T05:00:34Z" duration-ms="2344" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Studentname_field_is_Blank -->
+        <test-method signature="Middlename_contain_Special_Characters()[pri:0, instance:com.mytest.Enquiry@776b83cc]" started-at="2018-08-22T05:00:34Z" name="Middlename_contain_Special_Characters" finished-at="2018-08-22T05:00:34Z" duration-ms="355" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Middle Name Contains Special Characters expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Middle Name Contains Special Characters expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertTrue(Assert.java:44)
+at com.mytest.Enquiry.Middlename_contain_Special_Characters(Enquiry.java:131)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+at java.base/java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Middlename_contain_Special_Characters -->
+        <test-method signature="Middlename_contain_numbers()[pri:0, instance:com.mytest.Enquiry@776b83cc]" started-at="2018-08-22T05:00:34Z" name="Middlename_contain_numbers" finished-at="2018-08-22T05:00:34Z" duration-ms="171" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Middlename_contain_numbers -->
+        <test-method signature="Middlename_contain_whitespaces()[pri:0, instance:com.mytest.Enquiry@776b83cc]" started-at="2018-08-22T05:00:34Z" name="Middlename_contain_whitespaces" finished-at="2018-08-22T05:00:35Z" duration-ms="282" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Middle Name Contains Whitespaces expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Middle Name Contains Whitespaces expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertTrue(Assert.java:44)
+at com.mytest.Enquiry.Middlename_contain_whitespaces(Enquiry.java:149)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+at java.base/java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Middlename_contain_whitespaces -->
+        <test-method signature="Middlename_contain_whitespaces_at_begining()[pri:0, instance:com.mytest.Enquiry@776b83cc]" started-at="2018-08-22T05:00:35Z" name="Middlename_contain_whitespaces_at_begining" finished-at="2018-08-22T05:00:35Z" duration-ms="259" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Middle Name Contain Whitespaces at Begining expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Middle Name Contain Whitespaces at Begining expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertTrue(Assert.java:44)
+at com.mytest.Enquiry.Middlename_contain_whitespaces_at_begining(Enquiry.java:158)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+at java.base/java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Middlename_contain_whitespaces_at_begining -->
+        <test-method signature="Middlename_contain_alphabets()[pri:0, instance:com.mytest.Enquiry@776b83cc]" started-at="2018-08-22T05:00:35Z" name="Middlename_contain_alphabets" finished-at="2018-08-22T05:00:35Z" duration-ms="347" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Middlename_contain_alphabets -->
+        <test-method signature="Lastname_contain_Special_Characters()[pri:0, instance:com.mytest.Enquiry@776b83cc]" started-at="2018-08-22T05:00:35Z" name="Lastname_contain_Special_Characters" finished-at="2018-08-22T05:00:36Z" duration-ms="482" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Last Name Contains Special Characters expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Last Name Contains Special Characters expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertTrue(Assert.java:44)
+at com.mytest.Enquiry.Lastname_contain_Special_Characters(Enquiry.java:177)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+at java.base/java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Lastname_contain_Special_Characters -->
+        <test-method signature="Lastname_contain_numbers()[pri:0, instance:com.mytest.Enquiry@776b83cc]" started-at="2018-08-22T05:00:36Z" name="Lastname_contain_numbers" finished-at="2018-08-22T05:00:36Z" duration-ms="207" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Lastname_contain_numbers -->
+        <test-method signature="Lastname_contain_whitespaces()[pri:0, instance:com.mytest.Enquiry@776b83cc]" started-at="2018-08-22T05:00:36Z" name="Lastname_contain_whitespaces" finished-at="2018-08-22T05:00:36Z" duration-ms="511" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Last Name Contains Whitespaces expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Last Name Contains Whitespaces expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertTrue(Assert.java:44)
+at com.mytest.Enquiry.Lastname_contain_whitespaces(Enquiry.java:195)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+at java.base/java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Lastname_contain_whitespaces -->
+        <test-method signature="Lastname_contain_alphabets()[pri:0, instance:com.mytest.Enquiry@776b83cc]" started-at="2018-08-22T05:00:36Z" name="Lastname_contain_alphabets" finished-at="2018-08-22T05:00:37Z" duration-ms="188" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Lastname_contain_alphabets -->
+        <test-method signature="Lastname_contain_whitespaces_at_begining()[pri:0, instance:com.mytest.Enquiry@776b83cc]" started-at="2018-08-22T05:00:37Z" name="Lastname_contain_whitespaces_at_begining" finished-at="2018-08-22T05:00:37Z" duration-ms="252" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Last Name Contain Whitespaces at Begining expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Last Name Contain Whitespaces at Begining expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertTrue(Assert.java:44)
+at com.mytest.Enquiry.Lastname_contain_whitespaces_at_begining(Enquiry.java:213)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+at java.base/java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Lastname_contain_whitespaces_at_begining -->
+        <test-method signature="Lastname_field_is_Blank()[pri:0, instance:com.mytest.Enquiry@776b83cc]" started-at="2018-08-22T05:00:37Z" name="Lastname_field_is_Blank" finished-at="2018-08-22T05:00:39Z" duration-ms="2268" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Lastname_field_is_Blank -->
+        <test-method signature="Collegename_contain_Special_Characters()[pri:0, instance:com.mytest.Enquiry@776b83cc]" started-at="2018-08-22T05:00:39Z" name="Collegename_contain_Special_Characters" finished-at="2018-08-22T05:00:40Z" duration-ms="382" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[College Name Contains Special Characters expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: College Name Contains Special Characters expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertTrue(Assert.java:44)
+at com.mytest.Enquiry.Collegename_contain_Special_Characters(Enquiry.java:233)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+at java.base/java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Collegename_contain_Special_Characters -->
+        <test-method signature="Collegename_contain_numbers()[pri:0, instance:com.mytest.Enquiry@776b83cc]" started-at="2018-08-22T05:00:40Z" name="Collegename_contain_numbers" finished-at="2018-08-22T05:00:40Z" duration-ms="315" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Collegename_contain_numbers -->
+        <test-method signature="Collegename_contain_whitespaces()[pri:0, instance:com.mytest.Enquiry@776b83cc]" started-at="2018-08-22T05:00:40Z" name="Collegename_contain_whitespaces" finished-at="2018-08-22T05:00:41Z" duration-ms="730" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Collegename_contain_whitespaces -->
+        <test-method signature="Collegename_contain_alphabets()[pri:0, instance:com.mytest.Enquiry@776b83cc]" started-at="2018-08-22T05:00:41Z" name="Collegename_contain_alphabets" finished-at="2018-08-22T05:00:41Z" duration-ms="741" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Collegename_contain_alphabets -->
+        <test-method signature="Collegename_contain_whitespaces_at_begining()[pri:0, instance:com.mytest.Enquiry@776b83cc]" started-at="2018-08-22T05:00:41Z" name="Collegename_contain_whitespaces_at_begining" finished-at="2018-08-22T05:00:42Z" duration-ms="294" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Collegename_contain_whitespaces_at_begining -->
+        <test-method signature="Collegename_field_is_Blank()[pri:0, instance:com.mytest.Enquiry@776b83cc]" started-at="2018-08-22T05:00:42Z" name="Collegename_field_is_Blank" finished-at="2018-08-22T05:00:43Z" duration-ms="1702" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Collegename_field_is_Blank -->
+        <test-method signature="Qualification_contain_Special_Characters()[pri:0, instance:com.mytest.Enquiry@776b83cc]" started-at="2018-08-22T05:00:43Z" name="Qualification_contain_Special_Characters" finished-at="2018-08-22T05:00:44Z" duration-ms="432" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[College Name Contains Special Characters expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: College Name Contains Special Characters expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertTrue(Assert.java:44)
+at com.mytest.Enquiry.Qualification_contain_Special_Characters(Enquiry.java:289)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+at java.base/java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Qualification_contain_Special_Characters -->
+        <test-method signature="Qualification_contain_numbers()[pri:0, instance:com.mytest.Enquiry@776b83cc]" started-at="2018-08-22T05:00:44Z" name="Qualification_contain_numbers" finished-at="2018-08-22T05:00:44Z" duration-ms="188" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[College Name Contains Numbers expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: College Name Contains Numbers expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertTrue(Assert.java:44)
+at com.mytest.Enquiry.Qualification_contain_numbers(Enquiry.java:298)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+at java.base/java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Qualification_contain_numbers -->
+        <test-method signature="Qualification_contain_whitespaces()[pri:0, instance:com.mytest.Enquiry@776b83cc]" started-at="2018-08-22T05:00:44Z" name="Qualification_contain_whitespaces" finished-at="2018-08-22T05:00:44Z" duration-ms="175" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Qualification_contain_whitespaces -->
+        <test-method signature="Qualification_contain_alphabets()[pri:0, instance:com.mytest.Enquiry@776b83cc]" started-at="2018-08-22T05:00:44Z" name="Qualification_contain_alphabets" finished-at="2018-08-22T05:00:44Z" duration-ms="138" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Qualification_contain_alphabets -->
+        <test-method signature="Qualification_contain_whitespaces_at_begining()[pri:0, instance:com.mytest.Enquiry@776b83cc]" started-at="2018-08-22T05:00:44Z" name="Qualification_contain_whitespaces_at_begining" finished-at="2018-08-22T05:00:44Z" duration-ms="183" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Qualification_contain_whitespaces_at_begining -->
+        <test-method signature="Qualification_field_is_Blank()[pri:0, instance:com.mytest.Enquiry@776b83cc]" started-at="2018-08-22T05:00:44Z" name="Qualification_field_is_Blank" finished-at="2018-08-22T05:00:47Z" duration-ms="2288" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Qualification_field_is_Blank -->
+        <test-method signature="Aadharno_contain_special_characters()[pri:0, instance:com.mytest.Enquiry@776b83cc]" started-at="2018-08-22T05:00:47Z" name="Aadharno_contain_special_characters" finished-at="2018-08-22T05:00:47Z" duration-ms="287" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Aadhar No Contains Spaecial Characters expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Aadhar No Contains Spaecial Characters expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertTrue(Assert.java:44)
+at com.mytest.Enquiry.Aadharno_contain_special_characters(Enquiry.java:345)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+at java.base/java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Aadharno_contain_special_characters -->
+        <test-method signature="Aadharno_contain_numbers()[pri:0, instance:com.mytest.Enquiry@776b83cc]" started-at="2018-08-22T05:00:47Z" name="Aadharno_contain_numbers" finished-at="2018-08-22T05:00:47Z" duration-ms="341" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Aadharno_contain_numbers -->
+        <test-method signature="Aadharno_contain_alphabets()[pri:0, instance:com.mytest.Enquiry@776b83cc]" started-at="2018-08-22T05:00:47Z" name="Aadharno_contain_alphabets" finished-at="2018-08-22T05:00:48Z" duration-ms="218" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Aadharno_contain_alphabets -->
+        <test-method signature="Aadharno_contain_whitespaces_at_begining()[pri:0, instance:com.mytest.Enquiry@776b83cc]" started-at="2018-08-22T05:00:48Z" name="Aadharno_contain_whitespaces_at_begining" finished-at="2018-08-22T05:00:48Z" duration-ms="232" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Aadharno_contain_whitespaces_at_begining -->
+        <test-method signature="Aadharno_contain_lessthan_12_numbers()[pri:0, instance:com.mytest.Enquiry@776b83cc]" started-at="2018-08-22T05:00:48Z" name="Aadharno_contain_lessthan_12_numbers" finished-at="2018-08-22T05:00:48Z" duration-ms="194" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Aadhar No Contains Less than 12 numbers expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Aadhar No Contains Less than 12 numbers expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertTrue(Assert.java:44)
+at com.mytest.Enquiry.Aadharno_contain_lessthan_12_numbers(Enquiry.java:390)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+at java.base/java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Aadharno_contain_lessthan_12_numbers -->
+        <test-method signature="Aadharno_contain_greaterthan_12_numbers()[pri:0, instance:com.mytest.Enquiry@776b83cc]" started-at="2018-08-22T05:00:48Z" name="Aadharno_contain_greaterthan_12_numbers" finished-at="2018-08-22T05:00:48Z" duration-ms="213" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Aadhar No Contains Whitespaces at begining expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Aadhar No Contains Whitespaces at begining expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertTrue(Assert.java:44)
+at com.mytest.Enquiry.Aadharno_contain_greaterthan_12_numbers(Enquiry.java:399)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+at java.base/java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Aadharno_contain_greaterthan_12_numbers -->
+        <test-method signature="Birthdate_Field_is_Blank()[pri:0, instance:com.mytest.Enquiry@776b83cc]" started-at="2018-08-22T05:00:48Z" name="Birthdate_Field_is_Blank" finished-at="2018-08-22T05:00:50Z" duration-ms="1662" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Birthdate_Field_is_Blank -->
+        <test-method signature="Birthdate_functionality()[pri:0, instance:com.mytest.Enquiry@776b83cc]" started-at="2018-08-22T05:00:50Z" name="Birthdate_functionality" finished-at="2018-08-22T05:00:52Z" duration-ms="1820" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Birthdate_functionality -->
+        <test-method signature="Blank_Gender_field()[pri:0, instance:com.mytest.Enquiry@776b83cc]" started-at="2018-08-22T05:00:52Z" name="Blank_Gender_field" finished-at="2018-08-22T05:00:52Z" duration-ms="42" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Gender field is Blank expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Gender field is Blank expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertTrue(Assert.java:44)
+at com.mytest.Enquiry.Blank_Gender_field(Enquiry.java:429)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+at java.base/java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Blank_Gender_field -->
+        <test-method signature="Gender_functionality()[pri:0, instance:com.mytest.Enquiry@776b83cc]" started-at="2018-08-22T05:00:52Z" name="Gender_functionality" finished-at="2018-08-22T05:00:52Z" duration-ms="303" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Gender_functionality -->
+        <test-method signature="PersonalInfo_next_button_functionality()[pri:0, instance:com.mytest.Enquiry@776b83cc]" started-at="2018-08-22T05:00:52Z" name="PersonalInfo_next_button_functionality" finished-at="2018-08-22T05:00:53Z" duration-ms="1342" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PersonalInfo_next_button_functionality -->
+        <test-method signature="Primary_mobno_field_is_Blank()[pri:0, instance:com.mytest.Enquiry@776b83cc]" started-at="2018-08-22T05:00:53Z" name="Primary_mobno_field_is_Blank" finished-at="2018-08-22T05:00:55Z" duration-ms="1821" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Primary_mobno_field_is_Blank -->
+        <test-method signature="Primary_mobno_contain_special_characters()[pri:0, instance:com.mytest.Enquiry@776b83cc]" started-at="2018-08-22T05:00:55Z" name="Primary_mobno_contain_special_characters" finished-at="2018-08-22T05:00:56Z" duration-ms="244" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Primary Mobile No Contains Spaecial Characters expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Primary Mobile No Contains Spaecial Characters expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertTrue(Assert.java:44)
+at com.mytest.Enquiry.Primary_mobno_contain_special_characters(Enquiry.java:476)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+at java.base/java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Primary_mobno_contain_special_characters -->
+        <test-method signature="Primary_mobno_contain_numbers()[pri:0, instance:com.mytest.Enquiry@776b83cc]" started-at="2018-08-22T05:00:56Z" name="Primary_mobno_contain_numbers" finished-at="2018-08-22T05:00:56Z" duration-ms="201" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Primary_mobno_contain_numbers -->
+        <test-method signature="Primary_mobno_contain_whitespaces()[pri:0, instance:com.mytest.Enquiry@776b83cc]" started-at="2018-08-22T05:00:56Z" name="Primary_mobno_contain_whitespaces" finished-at="2018-08-22T05:00:56Z" duration-ms="246" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Primary_mobno_contain_whitespaces -->
+        <test-method signature="Primary_mobno_contain_alphabets()[pri:0, instance:com.mytest.Enquiry@776b83cc]" started-at="2018-08-22T05:00:56Z" name="Primary_mobno_contain_alphabets" finished-at="2018-08-22T05:00:56Z" duration-ms="295" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Primary_mobno_contain_alphabets -->
+        <test-method signature="Primary_mobno_contain_whitespaces_at_begining()[pri:0, instance:com.mytest.Enquiry@776b83cc]" started-at="2018-08-22T05:00:56Z" name="Primary_mobno_contain_whitespaces_at_begining" finished-at="2018-08-22T05:00:57Z" duration-ms="285" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Primary_mobno_contain_whitespaces_at_begining -->
+        <test-method signature="Primary_mobno_contain_lessthan_10_numbers()[pri:0, instance:com.mytest.Enquiry@776b83cc]" started-at="2018-08-22T05:00:57Z" name="Primary_mobno_contain_lessthan_10_numbers" finished-at="2018-08-22T05:00:57Z" duration-ms="142" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Primary Mobile No Contains Less than 10 numbers expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Primary Mobile No Contains Less than 10 numbers expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertTrue(Assert.java:44)
+at com.mytest.Enquiry.Primary_mobno_contain_lessthan_10_numbers(Enquiry.java:531)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+at java.base/java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Primary_mobno_contain_lessthan_10_numbers -->
+        <test-method signature="Primary_mobno_contain_greaterthan_10_numbers()[pri:0, instance:com.mytest.Enquiry@776b83cc]" started-at="2018-08-22T05:00:57Z" name="Primary_mobno_contain_greaterthan_10_numbers" finished-at="2018-08-22T05:00:57Z" duration-ms="225" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Primary_mobno_contain_greaterthan_10_numbers -->
+        <test-method signature="Secondary_mobno_contain_special_characters()[pri:0, instance:com.mytest.Enquiry@776b83cc]" started-at="2018-08-22T05:00:57Z" name="Secondary_mobno_contain_special_characters" finished-at="2018-08-22T05:00:57Z" duration-ms="262" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Secondary Mobile No Contains Spaecial Characters expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Secondary Mobile No Contains Spaecial Characters expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertTrue(Assert.java:44)
+at com.mytest.Enquiry.Secondary_mobno_contain_special_characters(Enquiry.java:549)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+at java.base/java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Secondary_mobno_contain_special_characters -->
+        <test-method signature="Secondary_mobno_contain_numbers()[pri:0, instance:com.mytest.Enquiry@776b83cc]" started-at="2018-08-22T05:00:57Z" name="Secondary_mobno_contain_numbers" finished-at="2018-08-22T05:00:57Z" duration-ms="201" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Secondary_mobno_contain_numbers -->
+        <test-method signature="Secondary_mobno_contain_whitespaces()[pri:0, instance:com.mytest.Enquiry@776b83cc]" started-at="2018-08-22T05:00:57Z" name="Secondary_mobno_contain_whitespaces" finished-at="2018-08-22T05:00:58Z" duration-ms="219" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Secondary_mobno_contain_whitespaces -->
+        <test-method signature="Secondary_mobno_contain_alphabets()[pri:0, instance:com.mytest.Enquiry@776b83cc]" started-at="2018-08-22T05:00:58Z" name="Secondary_mobno_contain_alphabets" finished-at="2018-08-22T05:00:58Z" duration-ms="150" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Secondary_mobno_contain_alphabets -->
+        <test-method signature="Secondary_mobno_contain_whitespaces_at_begining()[pri:0, instance:com.mytest.Enquiry@776b83cc]" started-at="2018-08-22T05:00:58Z" name="Secondary_mobno_contain_whitespaces_at_begining" finished-at="2018-08-22T05:00:58Z" duration-ms="179" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Secondary_mobno_contain_whitespaces_at_begining -->
+        <test-method signature="Secondary_mobno_contain_lessthan_10_numbers()[pri:0, instance:com.mytest.Enquiry@776b83cc]" started-at="2018-08-22T05:00:58Z" name="Secondary_mobno_contain_lessthan_10_numbers" finished-at="2018-08-22T05:00:58Z" duration-ms="142" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Secondary Mobile No Contains Less than 10 numbers expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Secondary Mobile No Contains Less than 10 numbers expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertTrue(Assert.java:44)
+at com.mytest.Enquiry.Secondary_mobno_contain_lessthan_10_numbers(Enquiry.java:603)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+at java.base/java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Secondary_mobno_contain_lessthan_10_numbers -->
+        <test-method signature="Secondary_mobno_contain_greaterthan_10_numbers()[pri:0, instance:com.mytest.Enquiry@776b83cc]" started-at="2018-08-22T05:00:58Z" name="Secondary_mobno_contain_greaterthan_10_numbers" finished-at="2018-08-22T05:00:58Z" duration-ms="278" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Secondary_mobno_contain_greaterthan_10_numbers -->
+        <test-method signature="Primary_email_contain_whitespaces()[pri:0, instance:com.mytest.Enquiry@776b83cc]" started-at="2018-08-22T05:00:58Z" name="Primary_email_contain_whitespaces" finished-at="2018-08-22T05:00:59Z" duration-ms="617" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Primary_email_contain_whitespaces -->
+        <test-method signature="Primary_email_valid()[pri:0, instance:com.mytest.Enquiry@776b83cc]" started-at="2018-08-22T05:00:59Z" name="Primary_email_valid" finished-at="2018-08-22T05:00:59Z" duration-ms="296" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Primary_email_valid -->
+        <test-method signature="Primary_email_contain_whitespaces_at_begining()[pri:0, instance:com.mytest.Enquiry@776b83cc]" started-at="2018-08-22T05:00:59Z" name="Primary_email_contain_whitespaces_at_begining" finished-at="2018-08-22T05:01:01Z" duration-ms="1675" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Primary Email contain Whitespaces at Begining expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Primary Email contain Whitespaces at Begining expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertTrue(Assert.java:44)
+at com.mytest.Enquiry.Primary_email_contain_whitespaces_at_begining(Enquiry.java:653)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+at java.base/java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Primary_email_contain_whitespaces_at_begining -->
+        <test-method signature="Primary_email_field_is_Blank()[pri:0, instance:com.mytest.Enquiry@776b83cc]" started-at="2018-08-22T05:01:01Z" name="Primary_email_field_is_Blank" finished-at="2018-08-22T05:01:01Z" duration-ms="254" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Primary_email_field_is_Blank -->
+        <test-method signature="Secondary_email_contain_whitespaces()[pri:0, instance:com.mytest.Enquiry@776b83cc]" started-at="2018-08-22T05:01:01Z" name="Secondary_email_contain_whitespaces" finished-at="2018-08-22T05:01:07Z" duration-ms="5521" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Secondary_email_contain_whitespaces -->
+        <test-method signature="Secondary_email_valid()[pri:0, instance:com.mytest.Enquiry@776b83cc]" started-at="2018-08-22T05:01:07Z" name="Secondary_email_valid" finished-at="2018-08-22T05:01:07Z" duration-ms="409" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Secondary_email_valid -->
+        <test-method signature="Secondary_email_contain_whitespaces_at_begining()[pri:0, instance:com.mytest.Enquiry@776b83cc]" started-at="2018-08-22T05:01:07Z" name="Secondary_email_contain_whitespaces_at_begining" finished-at="2018-08-22T05:01:09Z" duration-ms="1490" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Secondary Email contain Whitespaces at Begining expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Secondary Email contain Whitespaces at Begining expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertTrue(Assert.java:44)
+at com.mytest.Enquiry.Secondary_email_contain_whitespaces_at_begining(Enquiry.java:704)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+at java.base/java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Secondary_email_contain_whitespaces_at_begining -->
+        <test-method signature="Valid_current_address()[pri:0, instance:com.mytest.Enquiry@776b83cc]" started-at="2018-08-22T05:01:09Z" name="Valid_current_address" finished-at="2018-08-22T05:01:09Z" duration-ms="723" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Valid_current_address -->
+        <test-method signature="Blank_current_address()[pri:0, instance:com.mytest.Enquiry@776b83cc]" started-at="2018-08-22T05:01:09Z" name="Blank_current_address" finished-at="2018-08-22T05:01:11Z" duration-ms="1310" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Blank_current_address -->
+        <test-method signature="Valid_permanent_address()[pri:0, instance:com.mytest.Enquiry@776b83cc]" started-at="2018-08-22T05:01:11Z" name="Valid_permanent_address" finished-at="2018-08-22T05:01:12Z" duration-ms="1320" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Valid_permanent_address -->
+        <test-method signature="Pincode_currentaddress_contain_special_characters()[pri:0, instance:com.mytest.Enquiry@776b83cc]" started-at="2018-08-22T05:01:12Z" name="Pincode_currentaddress_contain_special_characters" finished-at="2018-08-22T05:01:12Z" duration-ms="393" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Pincode No Contains Spaecial Characters expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Pincode No Contains Spaecial Characters expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertTrue(Assert.java:44)
+at com.mytest.Enquiry.Pincode_currentaddress_contain_special_characters(Enquiry.java:757)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+at java.base/java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Pincode_currentaddress_contain_special_characters -->
+        <test-method signature="Pincode_currentaddress_contain_numbers()[pri:0, instance:com.mytest.Enquiry@776b83cc]" started-at="2018-08-22T05:01:12Z" name="Pincode_currentaddress_contain_numbers" finished-at="2018-08-22T05:01:13Z" duration-ms="178" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Pincode_currentaddress_contain_numbers -->
+        <test-method signature="Pincode_currentaddress_contain_whitespaces()[pri:0, instance:com.mytest.Enquiry@776b83cc]" started-at="2018-08-22T05:01:13Z" name="Pincode_currentaddress_contain_whitespaces" finished-at="2018-08-22T05:01:13Z" duration-ms="226" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Pincode_currentaddress_contain_whitespaces -->
+        <test-method signature="Pincode_currentaddress_contain_alphabets()[pri:0, instance:com.mytest.Enquiry@776b83cc]" started-at="2018-08-22T05:01:13Z" name="Pincode_currentaddress_contain_alphabets" finished-at="2018-08-22T05:01:13Z" duration-ms="217" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Pincode_currentaddress_contain_alphabets -->
+        <test-method signature="Pincode_currentaddress_contain_whitespaces_at_begining()[pri:0, instance:com.mytest.Enquiry@776b83cc]" started-at="2018-08-22T05:01:13Z" name="Pincode_currentaddress_contain_whitespaces_at_begining" finished-at="2018-08-22T05:01:13Z" duration-ms="240" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Pincode_currentaddress_contain_whitespaces_at_begining -->
+        <test-method signature="Pincode_currentaddress_field_is_Blank()[pri:0, instance:com.mytest.Enquiry@776b83cc]" started-at="2018-08-22T05:01:13Z" name="Pincode_currentaddress_field_is_Blank" finished-at="2018-08-22T05:01:15Z" duration-ms="1276" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Pincode_currentaddress_field_is_Blank -->
+        <test-method signature="Pincode_currentaddress_contain_morethan_6_numbers()[pri:0, instance:com.mytest.Enquiry@776b83cc]" started-at="2018-08-22T05:01:15Z" name="Pincode_currentaddress_contain_morethan_6_numbers" finished-at="2018-08-22T05:01:15Z" duration-ms="325" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Pincode_currentaddress_contain_morethan_6_numbers -->
+        <test-method signature="Pincode_currentaddress_contain_lessthan_6_numbers()[pri:0, instance:com.mytest.Enquiry@776b83cc]" started-at="2018-08-22T05:01:15Z" name="Pincode_currentaddress_contain_lessthan_6_numbers" finished-at="2018-08-22T05:01:15Z" duration-ms="441" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Pincode_currentaddress_contain_lessthan_6_numbers -->
+        <test-method signature="Pincode_permanentaddress_contain_special_characters()[pri:0, instance:com.mytest.Enquiry@776b83cc]" started-at="2018-08-22T05:01:15Z" name="Pincode_permanentaddress_contain_special_characters" finished-at="2018-08-22T05:01:16Z" duration-ms="364" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Pincode No Contains Spaecial Characters expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Pincode No Contains Spaecial Characters expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertTrue(Assert.java:44)
+at com.mytest.Enquiry.Pincode_permanentaddress_contain_special_characters(Enquiry.java:834)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+at java.base/java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Pincode_permanentaddress_contain_special_characters -->
+        <test-method signature="Pincode_permanentaddress_contain_numbers()[pri:0, instance:com.mytest.Enquiry@776b83cc]" started-at="2018-08-22T05:01:16Z" name="Pincode_permanentaddress_contain_numbers" finished-at="2018-08-22T05:01:16Z" duration-ms="187" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Pincode_permanentaddress_contain_numbers -->
+        <test-method signature="Pincode_permanentaddress_contain_whitespaces()[pri:0, instance:com.mytest.Enquiry@776b83cc]" started-at="2018-08-22T05:01:16Z" name="Pincode_permanentaddress_contain_whitespaces" finished-at="2018-08-22T05:01:16Z" duration-ms="238" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Pincode_permanentaddress_contain_whitespaces -->
+        <test-method signature="Pincode_permanentaddress_contain_alphabets()[pri:0, instance:com.mytest.Enquiry@776b83cc]" started-at="2018-08-22T05:01:16Z" name="Pincode_permanentaddress_contain_alphabets" finished-at="2018-08-22T05:01:16Z" duration-ms="257" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Pincode_permanentaddress_contain_alphabets -->
+        <test-method signature="Pincode_permanentaddress_contain_whitespaces_at_begining()[pri:0, instance:com.mytest.Enquiry@776b83cc]" started-at="2018-08-22T05:01:16Z" name="Pincode_permanentaddress_contain_whitespaces_at_begining" finished-at="2018-08-22T05:01:17Z" duration-ms="304" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Pincode_permanentaddress_contain_whitespaces_at_begining -->
+        <test-method signature="Pincode_permanentaddress_contain_morethan_6_numbers()[pri:0, instance:com.mytest.Enquiry@776b83cc]" started-at="2018-08-22T05:01:17Z" name="Pincode_permanentaddress_contain_morethan_6_numbers" finished-at="2018-08-22T05:01:17Z" duration-ms="186" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Pincode_permanentaddress_contain_morethan_6_numbers -->
+        <test-method signature="Pincode_permanentaddress_contain_lessthan_6_numbers()[pri:0, instance:com.mytest.Enquiry@776b83cc]" started-at="2018-08-22T05:01:17Z" name="Pincode_permanentaddress_contain_lessthan_6_numbers" finished-at="2018-08-22T05:01:20Z" duration-ms="3471" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Pincode_permanentaddress_contain_lessthan_6_numbers -->
+        <test-method signature="Communicationdetails_next_button_functionality()[pri:0, instance:com.mytest.Enquiry@776b83cc]" started-at="2018-08-22T05:01:20Z" name="Communicationdetails_next_button_functionality" finished-at="2018-08-22T05:01:21Z" duration-ms="285" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Communicationdetails_next_button_functionality -->
+        <test-method signature="Course_interested_is_Blank()[pri:0, instance:com.mytest.Enquiry@776b83cc]" started-at="2018-08-22T05:01:21Z" name="Course_interested_is_Blank" finished-at="2018-08-22T05:01:21Z" duration-ms="282" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Course_interested_is_Blank -->
+        <test-method signature="Course_interested_functionality()[pri:0, instance:com.mytest.Enquiry@776b83cc]" started-at="2018-08-22T05:01:21Z" name="Course_interested_functionality" finished-at="2018-08-22T05:01:21Z" duration-ms="317" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Course_interested_functionality -->
+        <test-method signature="Multiple_Course_Interested()[pri:0, instance:com.mytest.Enquiry@776b83cc]" started-at="2018-08-22T05:01:21Z" name="Multiple_Course_Interested" finished-at="2018-08-22T05:01:21Z" duration-ms="217" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Multiple_Course_Interested -->
+        <test-method signature="Blank_Demo_Lecture()[pri:0, instance:com.mytest.Enquiry@776b83cc]" started-at="2018-08-22T05:01:21Z" name="Blank_Demo_Lecture" finished-at="2018-08-22T05:01:21Z" duration-ms="71" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Demo Lecture Accepted Blank Field expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Demo Lecture Accepted Blank Field expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertTrue(Assert.java:44)
+at com.mytest.Enquiry.Blank_Demo_Lecture(Enquiry.java:951)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+at java.base/java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Blank_Demo_Lecture -->
+        <test-method signature="Demo_lecture_functionality()[pri:0, instance:com.mytest.Enquiry@776b83cc]" started-at="2018-08-22T05:01:21Z" name="Demo_lecture_functionality" finished-at="2018-08-22T05:01:22Z" duration-ms="440" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Demo_lecture_functionality -->
+        <test-method signature="Blank_Interest_level()[pri:0, instance:com.mytest.Enquiry@776b83cc]" started-at="2018-08-22T05:01:22Z" name="Blank_Interest_level" finished-at="2018-08-22T05:01:22Z" duration-ms="179" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Blank_Interest_level -->
+        <test-method signature="Interest_level_functionality()[pri:0, instance:com.mytest.Enquiry@776b83cc]" started-at="2018-08-22T05:01:22Z" name="Interest_level_functionality" finished-at="2018-08-22T05:01:22Z" duration-ms="256" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Interest_level_functionality -->
+        <test-method signature="Blank_Next_Follow_Up_Date()[pri:0, instance:com.mytest.Enquiry@776b83cc]" started-at="2018-08-22T05:01:22Z" name="Blank_Next_Follow_Up_Date" finished-at="2018-08-22T05:01:22Z" duration-ms="72" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Blank_Next_Follow_Up_Date -->
+        <test-method signature="Next_Follow_Up_Date()[pri:0, instance:com.mytest.Enquiry@776b83cc]" started-at="2018-08-22T05:01:22Z" name="Next_Follow_Up_Date" finished-at="2018-08-22T05:01:23Z" duration-ms="255" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Next_Follow_Up_Date -->
+        <test-method signature="Blank_Follow_up_Details()[pri:0, instance:com.mytest.Enquiry@776b83cc]" started-at="2018-08-22T05:01:23Z" name="Blank_Follow_up_Details" finished-at="2018-08-22T05:01:23Z" duration-ms="74" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Blank_Follow_up_Details -->
+        <test-method signature="Follow_up_Details_functionality()[pri:0, instance:com.mytest.Enquiry@776b83cc]" started-at="2018-08-22T05:01:23Z" name="Follow_up_Details_functionality" finished-at="2018-08-22T05:01:23Z" duration-ms="361" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Follow_up_Details_functionality -->
+        <test-method signature="FollowUpDetails_next_button_functionality()[pri:0, instance:com.mytest.Enquiry@776b83cc]" started-at="2018-08-22T05:01:23Z" name="FollowUpDetails_next_button_functionality" finished-at="2018-08-22T05:01:23Z" duration-ms="203" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- FollowUpDetails_next_button_functionality -->
+        <test-method signature="Blank_Lead_Source()[pri:0, instance:com.mytest.Enquiry@776b83cc]" started-at="2018-08-22T05:01:23Z" name="Blank_Lead_Source" finished-at="2018-08-22T05:01:24Z" duration-ms="153" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Blank_Lead_Source -->
+        <test-method signature="Lead_Source_functionality()[pri:0, instance:com.mytest.Enquiry@776b83cc]" started-at="2018-08-22T05:01:24Z" name="Lead_Source_functionality" finished-at="2018-08-22T05:01:24Z" duration-ms="352" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Lead_Source_functionality -->
+        <test-method signature="Assign_to()[pri:0, instance:com.mytest.Enquiry@776b83cc]" started-at="2018-08-22T05:01:24Z" name="Assign_to" finished-at="2018-08-22T05:01:24Z" duration-ms="135" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Assign_to -->
+        <test-method signature="Reference_Name_functionality()[pri:0, instance:com.mytest.Enquiry@776b83cc]" started-at="2018-08-22T05:01:24Z" name="Reference_Name_functionality" finished-at="2018-08-22T05:01:24Z" duration-ms="290" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Reference_Name_functionality -->
+        <test-method signature="Todays_Created_Date()[pri:0, instance:com.mytest.Enquiry@776b83cc]" started-at="2018-08-22T05:01:24Z" name="Todays_Created_Date" finished-at="2018-08-22T05:01:24Z" duration-ms="48" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Todays_Created_Date -->
+        <test-method signature="Created_Date()[pri:0, instance:com.mytest.Enquiry@776b83cc]" started-at="2018-08-22T05:01:24Z" name="Created_Date" finished-at="2018-08-22T05:01:25Z" duration-ms="313" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Created_Date -->
+        <test-method signature="Finish_Button_functionality()[pri:0, instance:com.mytest.Enquiry@776b83cc]" started-at="2018-08-22T05:01:25Z" name="Finish_Button_functionality" finished-at="2018-08-22T05:01:29Z" duration-ms="4841" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Finish_Button_functionality -->
+        <test-method signature="Update_functionalty()[pri:0, instance:com.mytest.Enquiry@776b83cc]" started-at="2018-08-22T05:01:29Z" name="Update_functionalty" finished-at="2018-08-22T05:01:44Z" duration-ms="14361" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Update_functionalty -->
+        <test-method signature="Follow_Up_Cancel_Button()[pri:0, instance:com.mytest.Enquiry@776b83cc]" started-at="2018-08-22T05:01:44Z" name="Follow_Up_Cancel_Button" finished-at="2018-08-22T05:01:53Z" duration-ms="9110" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Follow_Up_Cancel_Button -->
+        <test-method signature="Blank_Next_Follow_Update()[pri:0, instance:com.mytest.Enquiry@776b83cc]" started-at="2018-08-22T05:01:53Z" name="Blank_Next_Follow_Update" finished-at="2018-08-22T05:02:01Z" duration-ms="8307" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Blank_Next_Follow_Update -->
+        <test-method signature="Next_Follow_Update()[pri:0, instance:com.mytest.Enquiry@776b83cc]" started-at="2018-08-22T05:02:01Z" name="Next_Follow_Update" finished-at="2018-08-22T05:02:02Z" duration-ms="286" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Next_Follow_Update -->
+        <test-method signature="Blank_Follow_Up_Mode()[pri:0, instance:com.mytest.Enquiry@776b83cc]" started-at="2018-08-22T05:02:02Z" name="Blank_Follow_Up_Mode" finished-at="2018-08-22T05:02:02Z" duration-ms="68" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Blank_Follow_Up_Mode -->
+        <test-method signature="Follow_Up_Mode()[pri:0, instance:com.mytest.Enquiry@776b83cc]" started-at="2018-08-22T05:02:02Z" name="Follow_Up_Mode" finished-at="2018-08-22T05:02:02Z" duration-ms="233" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Follow Up Mode Field NOT Working expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Follow Up Mode Field NOT Working expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertTrue(Assert.java:44)
+at com.mytest.Enquiry.Follow_Up_Mode(Enquiry.java:1243)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+at java.base/java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Follow_Up_Mode -->
+        <test-method signature="Blank_Notes()[pri:0, instance:com.mytest.Enquiry@776b83cc]" started-at="2018-08-22T05:02:02Z" name="Blank_Notes" finished-at="2018-08-22T05:02:02Z" duration-ms="93" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Blank_Notes -->
+        <test-method signature="Notes()[pri:0, instance:com.mytest.Enquiry@776b83cc]" started-at="2018-08-22T05:02:02Z" name="Notes" finished-at="2018-08-22T05:02:02Z" duration-ms="314" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Notes -->
+        <test-method signature="Followup_save_button_functionality()[pri:0, instance:com.mytest.Enquiry@776b83cc]" started-at="2018-08-22T05:02:02Z" name="Followup_save_button_functionality" finished-at="2018-08-22T05:02:05Z" duration-ms="3152" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Followup_save_button_functionality -->
+        <test-method signature="Delete_Enquiry_Cancel_Button()[pri:0, instance:com.mytest.Enquiry@776b83cc]" started-at="2018-08-22T05:02:05Z" name="Delete_Enquiry_Cancel_Button" finished-at="2018-08-22T05:02:12Z" duration-ms="6893" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Delete_Enquiry_Cancel_Button -->
+        <test-method signature="Delete_Enquiry()[pri:0, instance:com.mytest.Enquiry@776b83cc]" started-at="2018-08-22T05:02:12Z" name="Delete_Enquiry" finished-at="2018-08-22T05:02:17Z" duration-ms="4786" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Delete_Enquiry -->
+      </class> <!-- com.mytest.Enquiry -->
+    </test> <!-- Enquiry -->
+  </suite> <!-- Admin360TestProject -->
+</testng-results>

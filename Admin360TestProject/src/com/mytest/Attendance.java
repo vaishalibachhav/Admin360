@@ -16,7 +16,7 @@ import org.testng.annotations.Test;
 	  @Test
 	  public void Add_Course() throws InterruptedException 
 	  {
-		  Thread.sleep(200);
+		  Thread.sleep(100);
 		  driver.findElement(By.xpath("//*[@id=\"nav-state-toggle\"]/i")).click();
 		  driver.findElement(By.xpath("//*[@id=\"2\"]/li[1]/a")).click();
 		  driver.findElement(By.xpath("//*[@id=\"btn-new-course\"]")).click();
